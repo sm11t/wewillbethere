@@ -1,0 +1,67 @@
+Asmit Datta
+New York, NY | asmit77@icloud.com | https://linkedin.com/in/asmitrajeet | https://www.asmit.space
+PROFESSIONAL SUMMARY
+Full-stack software engineer and NYU M.S. CS candidate with a track record of shipping production systems at AI startups:
+real-time mobile apps, voice-to-SQL pipelines, autonomous AI agents, and payment-gated MCP infrastructure. Comfortable
+owning the full stack and moving fast in early-stage environments.
+EDUCATION
+New York University
+New York, NY
+M.S. in Computer Science.
+2028
+Arizona State University
+Tempe, AZ
+B.S. in Computer Science, Minor in Business. Technical Officer, The AI Society at ASU: led
+workshops and mentored a 4-freshman team through their first ML project (multimodal emotion
+detection).
+2026
+EXPERIENCE
+Software Engineer Intern (Capstone)
+Aug 2025 – Apr 2026
+WatchDNA
+Remote
+• Shipped a store locator with an interactive Mapbox map, real-time filtering, and an admin console for data operations; built an
+automated Python endpoint-discovery pipeline to keep the store dataset current
+• Built the full backend from scratch: databases, JWT auth with role-based access, middleware, and security; shipped a
+companion app on the same stack by reusing the auth and data layers
+Software Engineer Intern
+May 2025 – Jan 2026
+MyYogaTeacher
+Remote
+• Built a production React Native app streaming real-time biometric data with offline-first sync and time-series deduplication,
+holding 99.9% uptime on flaky networks
+• Shipped a voice-to-SQL pipeline using OpenAI Whisper and streaming LLM responses that cut manual admin edit work by
+60%
+Software Engineer Intern
+May 2023 – Aug 2023
+Flickmatch
+New Delhi, India
+• Re-engineered web app components from Figma designs and built responsive UIs with Material-UI, tightening visual
+consistency across the consumer surface
+PROJECTS
+Torii https://www.asmit.space/kya
+2026
+• Built an MCP proxy that enforces identity, policy, budget, and audit between AI agents and paid tools: atomic budget tracking,
+JSON policy engine, and SQLite audit ledger
+• Implemented per-agent JWT identity with HTTP 402 handling and per-agent wallets, surfaced through a real-time dashboard
+for human policy auditing
+Lead Engine https://www.asmit.space/lead-engine
+2026
+• Built an autonomous AI agent that scouts, scores (Motivation x Ability x Timeline), and calls real estate leads 24/7; sourced
+2,100+ leads, hit ~50% AI-call conversion, and cut manual prospecting by 70%
+• Designed a 5-stage pipeline (scout, dedupe, score, AI voice call, campaign assign) with parallel sub-agents and Telegram alerts,
+exposed as an interactive node graph
+Pash https://www.asmit.space/pash
+2026
+• Built a full-stack audio stem isolation platform with async job queueing on S3 and SQS and remote CUDA GPU workers,
+processing tracks 5-10x faster than CPU baseline
+asmit.space, Interactive Portfolio https://www.asmit.space
+2024
+• Modeled a room and desktop in Blender and rendered it in the browser with Three.js as a walkable computer where every
+project and experience opens as a living artifact
+SKILLS
+AI & Agents: OpenAI/Whisper, Claude, MCP, x402, Pinecone, LangChain, Demucs, Selenium
+Backend & APIs: Node.js, Express, FastAPI, Flask, REST, WebSocket, GraphQL, Bun, Hono
+Languages: TypeScript, JavaScript, Python, SQL, Go, Java, C++, Rust
+Frontend & Mobile: React, React Native, Tailwind, NativeWind, Three.js, HTML/CSS
+Databases & Cloud: PostgreSQL, MongoDB, SQLite, Firebase, AWS (EC2, S3, Lambda, SQS), Docker, CI/CD

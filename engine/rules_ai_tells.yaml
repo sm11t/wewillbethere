@@ -1,0 +1,118 @@
+# Rules for the anti-AI-tell linter.
+#
+# Data only. The engine is in ai_lint.py and should not need editing to add a rule.
+#
+# Severity:
+#   block  - never ship this
+#   warn   - almost always wrong; override deliberately
+#   note   - depends on context; a human decides
+#
+# The point is not that these words are bad English. The point is that language
+# models reach for them far more often than people do, so a document dense with
+# them reads as machine-written even when every fact in it is true.
+
+phrases:
+  # ---- LLM signature vocabulary -------------------------------------------
+  - {pattern: '\bleverag(e|ed|ing)\b',            severity: block, fix: "used, built on, ran on - or name the thing"}
+  - {pattern: '\bspearhead(ed|ing)?\b',           severity: block, fix: "led, started, built"}
+  - {pattern: '\butiliz(e|ed|ing|ation)\b',       severity: block, fix: "used"}
+  - {pattern: '\bdelv(e|ed|ing)\b',               severity: block, fix: "looked at, dug into"}
+  - {pattern: '\bseamless(ly)?\b',                severity: block, fix: "cut it, or say what actually worked"}
+  - {pattern: '\bcutting[- ]edge\b',              severity: block, fix: "name the technology instead"}
+  - {pattern: '\bstate[- ]of[- ]the[- ]art\b',    severity: block, fix: "name the technology instead"}
+  - {pattern: '\brobust\b',                       severity: warn,  fix: "say what it survived"}
+  - {pattern: '\bscalable\b',                     severity: warn,  fix: "give the number it scaled to"}
+  - {pattern: '\bpivotal\b',                      severity: block, fix: "cut it"}
+  - {pattern: '\bmeticulous(ly)?\b',              severity: block, fix: "cut it"}
+  - {pattern: '\btestament to\b',                 severity: block, fix: "cut the sentence"}
+  - {pattern: '\bunderscor(e|es|ed|ing)\b',       severity: block, fix: "shows"}
+  - {pattern: '\bshowcas(e|es|ed|ing)\b',         severity: warn,  fix: "built, shipped, wrote"}
+  - {pattern: '\bcrafted\b',                      severity: warn,  fix: "built, wrote"}
+  - {pattern: '\bnavigat(e|ed|ing) the\b',        severity: warn,  fix: "say what you actually did"}
+  - {pattern: '\bfast[- ]paced\b',                severity: block, fix: "cut it"}
+  - {pattern: '\bever[- ](evolving|changing)\b',  severity: block, fix: "cut it"}
+  - {pattern: '\bholistic\b',                     severity: warn,  fix: "cut it"}
+  - {pattern: '\bsynerg(y|ies|istic)\b',          severity: block, fix: "cut it"}
+  - {pattern: '\binnovative\b',                   severity: warn,  fix: "say what was new about it"}
+  - {pattern: '\bgame[- ]chang(er|ing)\b',        severity: block, fix: "cut it"}
+  - {pattern: '\bbest[- ]in[- ]class\b',          severity: block, fix: "cut it"}
+  - {pattern: '\bwealth of experience\b',         severity: block, fix: "cut it"}
+  - {pattern: '\bproven track record\b',          severity: warn,  fix: "give one example instead"}
+  - {pattern: '\bdeep(ly)? (understanding|passion)\b', severity: warn, fix: "show it, do not claim it"}
+  - {pattern: '\bhoned\b',                        severity: warn,  fix: "cut it"}
+  - {pattern: '\bembark(ed|ing)?\b',              severity: block, fix: "started"}
+  - {pattern: '\brealm of\b',                     severity: block, fix: "in"}
+  - {pattern: '\blandscape of\b',                 severity: block, fix: "cut it"}
+  - {pattern: '\btapestry\b',                     severity: block, fix: "cut it"}
+  - {pattern: '\bmyriad\b',                       severity: warn,  fix: "many, or the actual count"}
+  - {pattern: '\bplethora\b',                     severity: warn,  fix: "many, or the actual count"}
+  - {pattern: '\bboast(s|ing|ed)?\b',             severity: warn,  fix: "has"}
+  - {pattern: '\bunwavering\b',                   severity: block, fix: "cut it"}
+  - {pattern: '\binstrumental in\b',              severity: warn,  fix: "say what you did"}
+  - {pattern: '\bplay(ed)? a (key|vital|crucial|significant) role\b', severity: block, fix: "say what you did"}
+  - {pattern: '\bresulting in\b',                 severity: note,  fix: "fine once; a tell if every bullet uses it"}
+  - {pattern: '\bcontributed to\b',               severity: warn,  fix: "vague - name your actual contribution"}
+  - {pattern: '\bhelped (to )?\b',                severity: warn,  fix: "vague - say what you did"}
+  - {pattern: '\bassisted (in|with)\b',           severity: warn,  fix: "vague - say what you did"}
+  - {pattern: '\bvarious\b',                      severity: warn,  fix: "name them or give a count"}
+  - {pattern: '\bcomprehensive\b',                severity: warn,  fix: "say what it covered"}
+  - {pattern: '\bextensive\b',                    severity: warn,  fix: "give the number"}
+  - {pattern: '\bsuccessfully\b',                 severity: warn,  fix: "redundant - if it failed you would not list it"}
+  - {pattern: '\bin order to\b',                  severity: note,  fix: "to"}
+  - {pattern: '\bdue to the fact that\b',         severity: warn,  fix: "because"}
+
+  # ---- cover letter clichés ------------------------------------------------
+  - {pattern: '\bI am writing to (express|apply)\b',      severity: block, fix: "open with something only you could write"}
+  - {pattern: '\bI am excited (to|about)\b',              severity: block, fix: "show the interest with a specific"}
+  - {pattern: '\bI am thrilled\b',                        severity: block, fix: "cut it"}
+  - {pattern: '\bperfect (fit|candidate)\b',              severity: block, fix: "let them conclude that"}
+  - {pattern: '\bI would welcome the opportunity\b',      severity: block, fix: "say what you want to talk about"}
+  - {pattern: '\bI look forward to hearing from you\b',   severity: warn,  fix: "end on substance"}
+  - {pattern: '\bthank you for your (time and )?consideration\b', severity: warn, fix: "end on substance"}
+  - {pattern: '\byour commitment to\b',                   severity: block, fix: "flattery - cite something specific instead"}
+  - {pattern: '\bI was drawn to\b',                       severity: warn,  fix: "say what specifically drew you"}
+  - {pattern: '\balign(s|ed)? (perfectly )?with my\b',    severity: block, fix: "cut it"}
+  - {pattern: '\bpassionate about\b',                     severity: block, fix: "show it with a fact"}
+  - {pattern: '\bhit the ground running\b',               severity: block, fix: "cut it"}
+  - {pattern: '\bbring to the table\b',                   severity: block, fix: "cut it"}
+  - {pattern: '\bdynamic (team|environment)\b',           severity: block, fix: "cut it"}
+  - {pattern: '\bvaluable (asset|contribution)\b',        severity: block, fix: "cut it"}
+  - {pattern: '\bas a (highly )?motivated\b',             severity: block, fix: "cut it"}
+  - {pattern: '\bI believe (that )?my\b',                 severity: warn,  fix: "state it, do not hedge"}
+
+  # ---- self-characterization -----------------------------------------------
+  # Asmit's positioning is that he asks the right questions. A reader decides
+  # that by watching him ask one, never by being told. A sentence that states
+  # the trait converts the strongest thing about him into filler.
+  - {pattern: '\b(ask|asking|asks) the right questions?\b', severity: block, fix: "open with the actual question instead"}
+  - {pattern: '\bI am (naturally |deeply )?curious\b',      severity: block, fix: "show the curiosity with a specific question"}
+  - {pattern: '\bcurious by nature\b',                      severity: block, fix: "demonstrate it"}
+  - {pattern: '\bintellectual(ly)? curious\b',              severity: block, fix: "cut it"}
+  - {pattern: '\ba (problem[- ]solver|critical thinker|deep thinker)\b', severity: block, fix: "name what you solved"}
+  - {pattern: '\bI (like|love|enjoy) (to )?(ask|dig into|think deeply)\b', severity: block, fix: "demonstrate it"}
+  - {pattern: '\bfirst[- ]principles\b',                    severity: warn,  fix: "overused; show the reasoning instead"}
+  - {pattern: '\bI thrive\b',                               severity: block, fix: "cut it"}
+  - {pattern: '\bwhat (excites|draws) me\b',                severity: warn,  fix: "state the thing plainly"}
+  - {pattern: '\bquestion everything\b',                    severity: block, fix: "cut it"}
+
+structural:
+  # Uniformity is the loudest structural tell. People write unevenly.
+  bullet_length_cv_min: 0.18        # coefficient of variation across bullet lengths
+  max_bullets_same_opening_verb: 2  # "Built ... Built ... Built ..."
+  max_consecutive_same_shape: 3     # verb + object + "resulting in" every time
+  em_dash_per_100_words_max: 1.2
+  max_rule_of_three_lists: 2        # "X, Y, and Z" as a recurring rhythm
+  forbid_not_x_but_y: true          # "not just a proxy, but a boundary"
+  forbid_bold_lead_in_every_bullet: true
+  max_sentence_len_words: 42
+
+metrics:
+  # A number that cannot be defended in an interview is worse than no number.
+  suspicious_round: [10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 95, 100]
+  require_provenance: true          # every number must map to an evidence entry
+  flag_precision_without_source: true   # "99.97%" with nothing behind it
+
+typography:
+  require_straight_quotes: false    # curly is fine in a PDF; matters in paste-boxes
+  forbid_arrow_glyph: true          # "→" reads as machine-written in prose
+  forbid_emoji: true

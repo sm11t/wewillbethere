@@ -1,0 +1,1029 @@
+# Resume variant presets.
+#
+# One fact base, four selections over it. These are NOT four documents to
+# maintain by hand - that is how versions drift and how two applications to the
+# same employer end up contradicting each other. Frozen across every preset:
+# name, contact, dates, titles, institutions, and every number.
+#
+# The only real decision each preset makes is what goes first and what gets cut.
+
+presets:
+
+  bain-genai-2027:
+    label: "Bain, GenAI / AI-ML Engineering Intern"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Projects lead. Torii and Lead Engine ARE the qualification here - agentic
+    # orchestration, tool integration, guardrails and human-in-the-loop are the
+    # posting's own words, and no experience entry states them as directly.
+    sections: [education, projects, experience, skills]
+    entries:
+      experience: [myyogateacher, delhi, aisociety, watchdna, flickmatch]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [infra, ml, research, teaching, backend, general]
+    skill_order: ["AI & Agents", Languages, "Backend & APIs", "Data & Cloud",
+                  "Frontend & Mobile"]
+    # Pinecone stays - it is a vector database and it is his own claim from his
+    # own resume, which is the one honest adjacency to their retrieval bullet.
+    # RAG, Vector search and Embeddings are deliberately NOT promoted: they are
+    # `ask: true` with nothing behind them, and this is precisely the posting
+    # where putting them on the page would buy an interview that opens on
+    # retrieval architecture. Ask him first.
+    skill_lead: [MCP, x402, "Autonomous agents", "Tool use", "Prompt engineering",
+                 "LLM streaming", "OpenAI API", "Claude API", Whisper, Pinecone,
+                 LangChain, "Gaussian Processes", Python, SQL, FastAPI, REST]
+    # Held off the page on purpose. The posting names all three; he has none of
+    # them evidenced. Remove from this list only when he confirms he has built
+    # one, and then give it an `evidence:` entry in profile.yaml.
+    skill_exclude: [RAG, "Vector search", Embeddings, PyTorch, "scikit-learn"]
+    notes: >-
+      Strongest match on merit. Retrieval (RAG, embeddings, hybrid) is the one
+      real gap - see jobs/bain-genai-ai-ml-intern.notes.md.
+
+  stoke-boltline-2027:
+    label: "Stoke Space, Software Intern Summer 2027, Boltline (full-stack TS)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # Boltline is internal tooling for hardware teams - the same species as
+    # WatchDNA's admin console. Full-stack TypeScript throughout, so the
+    # ordering is web stack first and the AI work last, where on the McKesson
+    # preset it was Python first.
+    entries:
+      experience: [watchdna, flickmatch, myyogateacher, aisociety, delhi]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, frontend, backend, infra, ml, teaching]
+    skill_order: [Languages, "Backend & APIs", "Frontend & Mobile",
+                  "Data & Cloud", "AI & Agents"]
+    # Their preferred stack, in their order, minus the two he has not used.
+    # Next.js and Apollo are NOT to be added - a framework and a GraphQL client
+    # he could learn in a week are not worth a false claim.
+    skill_lead: [TypeScript, JavaScript, React, "Node.js", "Express.js",
+                 GraphQL, PostgreSQL, AWS, Python]
+    notes: >-
+      EXPORT CONTROL is the real gate - see
+      jobs/stoke-space-swe-intern-summer-2027.notes.md before spending effort.
+
+  mckesson-swe-2027:
+    label: "McKesson, Software Development Intern, Summer 2027 (JR0152635)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # AI Society stays in Experience rather than moving to Leadership. This
+    # posting asks for code reviews, technical documentation, product-manager
+    # collaboration and stand-ups; the teaching role is the only entry that
+    # evidences written communication and working with people, so it belongs
+    # in the main run, not at the bottom.
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi, flickmatch]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, teaching, ml, infra, frontend]
+    skill_order: [Languages, "Backend & APIs", "Data & Cloud",
+                  "Frontend & Mobile", "AI & Agents"]
+    # The posting names Python explicitly and lists SQL-adjacent work; Java is
+    # named too but has no evidencing project, so it stays where the ordering
+    # puts it rather than being promoted. C# is absent from the profile and is
+    # NOT to be added - Python already satisfies the language requirement.
+    skill_lead: [Python, Java, SQL, "Node.js", PostgreSQL, Docker, "CI/CD", Git]
+    notes: >-
+      Knockouts all pass except work authorization, which is unknown. See
+      jobs/mckesson-swe-intern-summer-2027.notes.md.
+
+  paypal-swe-2027:
+    label: "PayPal, Software Engineer Intern, Summer 2027"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Experience first. PayPal is a large, ATS-screened employer that asks for
+    # internship experience explicitly, and WatchDNA's full-stack work is their
+    # named stack almost line for line - Node.js, React, SQL, REST, databases
+    # from scratch. Torii leads Projects because its pre-authorization budget
+    # tracker is a payments authorization layer, which is this company's
+    # subject; see jobs/paypal-swe-intern-summer-2027.notes.md.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi, flickmatch]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, frontend, infra, ml, teaching]
+    skill_order: [Languages, "Backend & APIs", "Frontend & Mobile",
+                  "Data & Cloud", "AI & Agents"]
+    # Their six named technologies first, in their order, minus Java. Then the
+    # database and data-integrity surface, which their second responsibility
+    # bullet is entirely about.
+    skill_lead: [Python, JavaScript, TypeScript, SQL, "Node.js", REST, React,
+                 PostgreSQL, "Express.js", JWT, "Role-based access control",
+                 SQLAlchemy, Docker, "CI/CD", Git, AWS]
+    # Java is named FIRST in their responsibilities and PayPal runs Java at
+    # scale - which is exactly why it stays off. It is `ask: true` with no
+    # evidencing project, and the Minimum Qualification asks for "at least one
+    # ... such as Java, Python, C++, JavaScript", which Python satisfies four
+    # times over. Java buys nothing as a gate-passer and a hostile first screen
+    # as a liability. Same call as C# on McKesson. Remove from this list only
+    # when Asmit says he can talk through a Java project for ten minutes.
+    skill_exclude: [Java, "C++", Go, Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Five of six named technologies are evidenced. The two open gates are work
+      authorization and which office - both his to answer. Code review and SDLC
+      process are unrecorded, not absent: ask before assuming either way.
+
+  betterment-swe-intern:
+    label: "Betterment, Software Engineering Intern (NYC, hybrid)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Startup internship, ATS then an engineer. Experience first because the
+    # posting's first ask is "prior internship experience at a startup or
+    # similar" - WatchDNA and MyYogaTeacher are that. Torii leads Projects:
+    # a budget tracker that reserves funds before the upstream call so two
+    # agents cannot overspend, and a ledger of every call and every reason one
+    # was blocked, is the closest thing on the profile to money moved
+    # carefully, which is this company's whole business. Pash second - the
+    # posting asks for side projects finished outside school, and Pash is a
+    # queue-based pipeline (S3, SQS, a remote worker). Flickmatch and
+    # Portfolio are the standing first cuts for one page.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi]
+      projects: [torii, pash, lead_engine, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, mobile, infra, frontend, ml, teaching, research]
+    skill_order: [Languages, "Backend & APIs", "Frontend & Mobile",
+                  "Data & Cloud", "AI & Agents"]
+    # Their list, in their order: Java, JavaScript, Ruby, Python, HTML/CSS,
+    # mobile, web services, Git, SQL. Java and Ruby joined on 2026-09-07
+    # under his standing instruction (CLAUDE.md, "Keywords he covered in a
+    # class"): evidence coursework_2026-09-07, interview answer is the course.
+    skill_lead: [Java, JavaScript, Ruby, Python, "HTML/CSS", TypeScript, SQL,
+                 "Node.js", REST, "Express.js", FastAPI, JWT, "React Native",
+                 Expo, React, Git, PostgreSQL, SQLite, AWS, Docker, "CI/CD",
+                 Automation, DevOps, "Software testing"]
+    skill_exclude: ["C++", Go, Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      All nine named technologies are on the page; Java and Ruby on coursework
+      evidence (his instruction, 2026-09-07). The graduation line ("graduating
+      in Spring/Summer 2026") and the internship term are unclear - his to
+      check on the form. See jobs/betterment-swe-intern.notes.md.
+
+  dropbox-swe-intern-2027:
+    label: "Dropbox, Software Engineering Intern (Summer 2027, Virtual First)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Big-company internship: ATS, recruiter, then a team-matching survey.
+    # Experience first for "shipping software as part of internships";
+    # Torii and Lead Engine lead Projects because the posting's own words are
+    # "build AI proficiency" and Dash is an agent product - a proxy that
+    # budgets and audits agents, and five scouts running in parallel with
+    # their reasoning written out, are the two most legible things he has.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, infra, ml, mobile, frontend, teaching, research]
+    skill_order: [Languages, "AI & Agents", "Backend & APIs", "Data & Cloud",
+                  "Frontend & Mobile"]
+    # Their languages in their order - Python, Go, JavaScript - then the
+    # agent vocabulary. Go joined 2026-09-07 on coursework evidence (his
+    # standing instruction; the posting names it).
+    skill_lead: [Python, Go, JavaScript, TypeScript, SQL, "HTML/CSS",
+                 "Autonomous agents", "Tool use", MCP, "Prompt engineering",
+                 "OpenAI API", "Claude API", "LLM streaming", x402, LangChain,
+                 "Node.js", REST, FastAPI, JWT, AWS, PostgreSQL, SQLite, Docker,
+                 "CI/CD", Automation, DevOps, "Software testing", Git, React,
+                 "React Native"]
+    skill_exclude: ["C++", Rust, LangGraph, RAG, "Vector search", Embeddings,
+                    PyTorch, "scikit-learn", "GitHub Actions", Linux, Pytest,
+                    Jest]
+    notes: >-
+      Graduation window (Fall/Winter 2027 or Spring 2028) fits an M.S. expected
+      2028 - the month is still unconfirmed (intake #3). Summer 2027, full time,
+      virtual first from New York; CPT through NYU. See
+      jobs/dropbox-swe-intern-summer-2027.notes.md.
+
+  icf-swe-intern-2027:
+    label: "ICF, 2027 Summer Intern, Software Developer"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Consulting internship: requirements into solutions, workflows and
+    # automations, low-code plus real code, APIs and integrations, agentic AI.
+    # MyYogaTeacher leads Experience because its first bullet is literally
+    # "idea into diagrams, wireframes and user journeys, then built"; WatchDNA
+    # second for the backend, the admin console and the automated pipeline.
+    # Lead Engine leads Projects for process automation; Torii second for
+    # agentic workflows and a JSON policy engine - configuration over code.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [myyogateacher, watchdna, aisociety, delhi]
+      projects: [lead_engine, torii, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, infra, ml, mobile, frontend, teaching, research]
+    skill_order: [Languages, "AI & Agents", "Backend & APIs", "Data & Cloud",
+                  "Frontend & Mobile"]
+    # Their language list in their order, then agents, APIs, and the
+    # collaboration tools they name (Git, GitHub, Jira) plus Agile.
+    skill_lead: [Java, Python, JavaScript, SQL, "HTML/CSS", TypeScript,
+                 "Autonomous agents", "Tool use", MCP, "Prompt engineering",
+                 "OpenAI API", "Claude API", REST, "Node.js", FastAPI, JWT,
+                 GraphQL, WebSocket, AWS, Automation, Git, GitHub, Jira, Agile,
+                 DevOps, "Software testing", PostgreSQL, Docker, "CI/CD",
+                 React, "React Native"]
+    # Low-code platforms (Salesforce, ServiceNow, Appian, Power Platform)
+    # are not on the page: nothing evidences them and a class does not cover
+    # them. Reported as the gap in the notes file; the letter names it once.
+    skill_exclude: ["C++", Rust, LangGraph, RAG, "Vector search", Embeddings,
+                    PyTorch, "scikit-learn", "GitHub Actions", Linux, Pytest,
+                    Jest]
+    notes: >-
+      Location not stated in the posting; "authorized to work in the United
+      States" under federal contract requirements - CPT is authorization, but
+      the sponsorship question is his. Coursework-only keywords on this page:
+      Java, Jira, Agile, DevOps, Software testing. See
+      jobs/icf-swe-intern-summer-2027.notes.md.
+
+  microsoft-swe-intern-2027:
+    label: "Microsoft, Software Engineering Intern - Full-Stack Product"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # "End-to-end product experiences across user interfaces, APIs, and
+    # backend services." WatchDNA is that sentence in one entry (Mapbox UI,
+    # admin console, REST + JWT backend, companion app), so it leads.
+    # MyYogaTeacher for the client, the feature design and the voice-to-SQL
+    # workflow; Flickmatch for the responsive UI from Figma - it earns its
+    # line here; AI Society for the team work. Delhi is off. Lead Engine
+    # leads Projects because it is FastAPI plus a React dashboard - full
+    # stack in one project - then Torii, Portfolio, Pash.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, flickmatch, aisociety]
+      projects: [lead_engine, torii, portfolio, pash]
+      leadership: []
+    prefer_flavors: [general, frontend, backend, mobile, infra, ml, teaching, research]
+    skill_order: [Languages, "Frontend & Mobile", "Backend & APIs",
+                  "Data & Cloud", "AI & Agents"]
+    # Their words in their order: TypeScript, JavaScript, React; then
+    # Node.js, Python, Java (coursework) for backend; REST; testing and
+    # accessibility (coursework) where they sit.
+    skill_lead: [TypeScript, JavaScript, Python, Java, SQL, "HTML/CSS",
+                 React, "React Native", Accessibility, Expo, Tailwind,
+                 "Material-UI", Recharts, Figma, "Node.js", REST, "Express.js",
+                 FastAPI, JWT, GraphQL, WebSocket, "Software testing",
+                 PostgreSQL, Automation, DevOps, "CI/CD", Docker, AWS, Git,
+                 GitHub]
+    skill_exclude: ["C++", Rust, Go, Ruby, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Requirement "at least one semester remaining after the internship" is
+      met by an M.S. expected 2028. Term, location and deadline are not in the
+      paste. Coursework-only keywords on this page: Java, Accessibility,
+      DevOps, Software testing. See
+      jobs/microsoft-swe-intern-fullstack-2027.notes.md.
+
+  tjx-it-engineer-intern-2027:
+    label: "TJX Global IT, IT Engineer Intern (Summer)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Corporate IT internship with five pathways - platform, data and
+    # automation, security, software development, product configuration -
+    # and an Agile, group-project shape. Experience first; WatchDNA carries
+    # software development and security (JWT, RBAC, middleware) in one entry;
+    # MyYogaTeacher the requirements-to-build path; AI Society is the only
+    # leadership title on the profile (Technical Officer) and the posting
+    # asks for "leadership abilities"; Flickmatch for the web work. Delhi off.
+    # Lead Engine leads Projects for data and automation; Torii second for
+    # identity, policy and budget enforcement - the security pathway.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, flickmatch]
+      projects: [lead_engine, torii, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, infra, frontend, mobile, ml, teaching, research]
+    skill_order: [Languages, "Backend & APIs", "Data & Cloud", "AI & Agents",
+                  "Frontend & Mobile"]
+    # No technology list in the posting, so the order follows the pathways:
+    # general languages, then APIs and security terms, then automation,
+    # Agile and the collaboration tools, then agents, then front end.
+    skill_lead: [Python, Java, JavaScript, TypeScript, SQL, "HTML/CSS",
+                 REST, "Node.js", JWT, "Role-based access control", FastAPI,
+                 "Express.js", GraphQL, WebSocket, Automation, Agile, Git,
+                 GitHub, Jira, DevOps, "Software testing", "CI/CD", Docker,
+                 AWS, PostgreSQL, "Autonomous agents", "Prompt engineering",
+                 "OpenAI API", React, "React Native"]
+    skill_exclude: ["C++", Rust, Go, Ruby, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      The posting's Key Qualifications are "current juniors" pursuing a
+      bachelor's degree; he is a first-year M.S. student. Built on his
+      instruction with that mismatch recorded; the class-year question on the
+      form is his to answer. Coursework-only keywords on this page: Java,
+      Agile, Jira, DevOps, Software testing. See
+      jobs/tjx-it-engineer-intern-summer-2027.notes.md.
+
+  rilla-swe-2027:
+    label: "Rilla, Software Engineer (in office, NYC)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Startup, full stack, "AI for the physical world". Their stack is his:
+    # React, React Native, TypeScript, Python, Node.js, PostgreSQL. All three
+    # internships were startups on his word (2026-09-07), so Experience
+    # leads with all three; AI Society fourth. Lead Engine leads Projects -
+    # an AI product pointed at a non-tech industry, calling real homeowners
+    # - then Torii, Pash, Portfolio.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, flickmatch, aisociety]
+      projects: [lead_engine, torii, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, frontend, mobile, infra, ml, teaching, research]
+    skill_order: [Languages, "Frontend & Mobile", "Backend & APIs",
+                  "Data & Cloud", "AI & Agents"]
+    # Their list in their order: TypeScript, Python, React, React Native,
+    # Node.js, PostgreSQL, GitHub Actions (coursework). C++ and Rust are
+    # "or similar" and stay off.
+    skill_lead: [TypeScript, JavaScript, Python, SQL, "HTML/CSS",
+                 React, "React Native", Expo, Tailwind, "Material-UI", Recharts,
+                 "Node.js", REST, "Express.js", FastAPI, JWT, WebSocket,
+                 PostgreSQL, AWS, "GitHub Actions", "CI/CD", Docker, Git, GitHub,
+                 Automation, DevOps, "Software testing",
+                 Whisper, "LLM streaming", "Autonomous agents", "OpenAI API",
+                 "Prompt engineering", MCP]
+    skill_exclude: ["C++", Rust, Go, Ruby, Java, LangGraph, RAG,
+                    "Vector search", Embeddings, PyTorch, "scikit-learn",
+                    Linux, Pytest, Jest, Jira, Agile, Accessibility]
+    notes: >-
+      Full-time, ~60 hrs/week in person in NYC per the posting; an F-1
+      student cannot hold that during term - Summer 2027 or after graduation
+      are the honest frames. Resume only, on his instruction. Coursework-only
+      keywords on this page: GitHub Actions, DevOps, Software testing. See
+      jobs/rilla-swe-nyc.notes.md.
+
+  pm-intern-2027:
+    label: "Product management internship (generic, titles unchanged)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Built 2026-09-07 on his instruction to tailor for product management,
+    # after the Atlassian PM posting turned out to exclude F-1 students. Job
+    # titles are NOT changed - a title is the employer's fact - but the
+    # selection is product-first: the `impact` flavor leads so the business
+    # outcomes render (a paid third-party app replaced, traffic up within six
+    # months; the admin team's hours given back), MyYogaTeacher leads because
+    # its first bullet is a feature taken from idea to diagrams, wireframes
+    # and user journeys and then built, and Lead Engine leads Projects as an
+    # AI product whose every decision is written out for the user.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [myyogateacher, watchdna, aisociety, flickmatch]
+      projects: [lead_engine, torii, portfolio, pash]
+      leadership: []
+    prefer_flavors: [impact, general, frontend, teaching, mobile, backend, infra, ml, research]
+    skill_order: ["Frontend & Mobile", "AI & Agents", Languages, "Data & Cloud",
+                  "Backend & APIs"]
+    # Product vocabulary first: the design artefacts, then the AI tools a PM
+    # posting asks about, then languages, then Agile and the trackers.
+    skill_lead: [Wireframing, "User journeys", Figma, Accessibility, React,
+                 "React Native", "Prompt engineering", "Autonomous agents",
+                 "OpenAI API", "Claude API", Whisper, "LLM streaming",
+                 Python, SQL, TypeScript, JavaScript, Agile, Jira, GitHub,
+                 Automation, "Software testing", REST, "Node.js"]
+    skill_exclude: ["C++", Rust, Go, Ruby, Java, LangGraph, RAG,
+                    "Vector search", Embeddings, PyTorch, "scikit-learn",
+                    "GitHub Actions", Linux, Pytest, Jest, x402, MCP, CUDA,
+                    Bun, Hono, GraphQL, WebSocket, SQLAlchemy, Uvicorn,
+                    Selenium, Electron, NativeWind, Vite]
+    notes: >-
+      Generic PM-internship preset; point it at a posting open to F-1
+      students. Titles unchanged. Coursework-only keywords on this page:
+      Accessibility, Agile, Jira, Software testing.
+
+  scale-swe-2027:
+    label: "Scale AI, Software Engineering Intern, Summer 2027 (San Francisco)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # PROJECTS FIRST, and Torii first inside them. One of Scale's nine example
+    # projects is "ship agentic AI applications and the tooling that makes them
+    # observable, testable, and safe to deploy" - which is a description of
+    # Torii, not an adjacency to it. The competition for this req is
+    # undergraduates from top programmes with FAANG internships; Torii is the
+    # thing none of them have, so it is the first thing read.
+    #
+    # Education still leads the page because the graduation date IS the first
+    # requirement and a screener needs to find it without hunting.
+    sections: [education, projects, experience, skills]
+    entries:
+      projects: [torii, lead_engine, pash, portfolio]
+      # WatchDNA leads Experience: "product engineering experience such as
+      # building web apps full-stack, integrating with relevant APIs" is their
+      # third requirement and that entry answers all of it in one place.
+      experience: [watchdna, myyogateacher, aisociety, delhi, flickmatch]
+      leadership: []
+    prefer_flavors: [infra, general, backend, frontend, ml, teaching]
+    skill_order: [Languages, "AI & Agents", "Backend & APIs",
+                  "Data & Cloud", "Frontend & Mobile"]
+    # Their four named technologies first - Python, TypeScript, React, MongoDB -
+    # then the agent surface, which is their whole business.
+    skill_lead: [Python, TypeScript, React, MongoDB, JavaScript, SQL, "Node.js",
+                 REST, FastAPI, MCP, x402, "Autonomous agents", "Tool use",
+                 "Prompt engineering", "OpenAI API", AWS, Docker]
+    # RAG, vector search and embeddings stay off, exactly as on Bain and for a
+    # sharper reason: this is a frontier-model data company. A retrieval keyword
+    # he cannot defend gets found here faster than anywhere else he is applying.
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      GRADUATION DATE IS THE GATE - "Fall 2027 or Spring 2028", and the profile
+      only says "Expected 2028". See jobs/scale-ai-swe-intern-summer-2027.notes.md
+      before sending. MongoDB is led on because the posting names it, but it is a
+      resume_2026 self-claim with no project behind it - confirm or cut.
+
+  primer-fullstack:
+    label: "Primer, Full Stack SWE Intern (PrimerOS) - resume only, no letter"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # THE AI SOCIETY ENTRY IS SECOND, AND THAT IS THE WHOLE POINT OF THIS
+    # PRESET. Their first stated requirement is "a real passion for fixing the
+    # US education system", and there is no cover letter on this application to
+    # argue it in - so the resume has to. Teaching materials, workshops run for
+    # students with no technical background, four freshmen mentored through a
+    # first ML project: that entry is the only education credential he has, and
+    # buried at position four it does not read as one. WatchDNA still leads,
+    # because their stack section is the rest of the posting.
+    entries:
+      experience: [watchdna, aisociety, myyogateacher, delhi, flickmatch]
+      # Portfolio is promoted above Pash here. "You take pride in your craft.
+      # Every detail matters" is a stated requirement, and a hand-modelled room
+      # rendered in the browser is a craft argument that a resume bullet cannot
+      # make in words.
+      projects: [torii, lead_engine, portfolio, pash]
+      leadership: []
+    prefer_flavors: [general, backend, frontend, teaching, infra, ml]
+    skill_order: [Languages, "Backend & APIs", "Frontend & Mobile",
+                  "Data & Cloud", "AI & Agents"]
+    # Their eight named technologies, in their order, minus the three he has
+    # not used. TypeScript first: it is his most-evidenced language and their
+    # first word.
+    skill_lead: [TypeScript, JavaScript, "Node.js", GraphQL, PostgreSQL, React,
+                 REST, "Express.js", JWT, Python, SQL, Supabase, Docker, Git]
+    # PRISMA, NEXT.JS AND RELAY ARE NOT TO BE ADDED. The posting names all
+    # three; he has used none. They are an ORM, a React framework and a GraphQL
+    # client - a week's learning each, and worth nothing against the cost of
+    # being asked. Identical call to Next.js and Apollo on the Stoke preset.
+    # Four of their eight - TypeScript, Node, Postgres, React - are evidenced
+    # outright, and those four are the backbone; the other four sit on top.
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      RESUME ONLY - no cover letter, on his instruction. The gate is the 4-to-8
+      month commitment, which no summer schedule satisfies; see
+      jobs/primer-fullstack-intern.notes.md. GraphQL is on the page as a
+      resume_2026 self-claim with no project behind it, and this posting uses
+      GraphQL daily - confirm or cut it.
+
+  adobe-swe-2027:
+    label: "Adobe, Software Engineer Intern 2027 - resume only, no letter"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # Conventional order. Adobe is a large ATS-screened employer whose list is
+    # weighted towards lifecycle, fundamentals and collaboration, and WatchDNA
+    # answers their SDLC line - "designing, building, deploying, and
+    # maintaining" - in a single entry: built from scratch, shipped to the App
+    # Store, then carried for nine months.
+    #
+    # Education leads because the graduation window (December 2027 - June 2028)
+    # is their first requirement.
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi, flickmatch]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, infra, frontend, ml, teaching]
+    # "AI & Agents" is second, straight after Languages. Their distinctive
+    # requirement is "exposure to modern development tools, including
+    # AI-assisted tools, and an understanding of how to use them RESPONSIBLY",
+    # and with no cover letter on this application the skills block and the
+    # Torii bullets are the only places that argument can be made.
+    skill_order: [Languages, "AI & Agents", "Backend & APIs",
+                  "Frontend & Mobile", "Data & Cloud"]
+    skill_lead: [Python, JavaScript, TypeScript, SQL, MCP, "Autonomous agents",
+                 "Tool use", "Prompt engineering", "OpenAI API", "Claude API",
+                 "Node.js", REST, React, PostgreSQL, Docker, "CI/CD", Git]
+    # "Proficiency in at least one programming language such as Java, Python,
+    # C++, or JavaScript" - Python satisfies it four times over and JavaScript
+    # twice. Java and C++ are `ask: true` with no evidencing project and buy
+    # nothing here. Identical call to C# on McKesson and Java on PayPal.
+    skill_exclude: [Java, "C++", Go, Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      RESUME ONLY - no cover letter, on his instruction. Graduation window is
+      the gate and "Expected 2028" does not answer it; see
+      jobs/adobe-swe-intern-2027.notes.md.
+
+  waymo-systems-2027:
+    label: "Waymo, SWE Intern - Systems Engineering (HIL test infrastructure)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # AI Society is second, and for a reason unique to this posting: one of
+    # their four "You will" bullets is "author technical design documents and
+    # user guides, and lead technical demos or workshops to onboard engineers".
+    # Writing the materials and running the workshops is literally that bullet,
+    # and it is the ONLY requirement on this posting he answers better than a
+    # typical applicant.
+    entries:
+      experience: [watchdna, aisociety, myyogateacher, delhi, flickmatch]
+      # PASH LEADS. The role is test infrastructure and pipelines, and Pash is
+      # the closest thing he has built: work lands in S3, jobs queue through
+      # SQS, remote workers execute them. That is a job runner. Torii drops to
+      # third - it is his best project everywhere else, but TypeScript agent
+      # tooling is the least relevant thing on the page to a C++ HIL bench.
+      projects: [pash, lead_engine, torii, portfolio]
+      leadership: []
+    prefer_flavors: [backend, infra, general, teaching, ml, frontend]
+    skill_order: [Languages, "Data & Cloud", "Backend & APIs",
+                  "AI & Agents", "Frontend & Mobile"]
+    skill_lead: ["C++", Python, SQL, AWS, Docker, "CI/CD", Git, CUDA, Pytest,
+                 PostgreSQL, REST, FastAPI]
+    # C++ AND PYTEST ARE ON THIS PAGE AND BOTH ARE `ask: true`. That is a
+    # deliberate exception to the usual rule and it needs Asmit's answer before
+    # this is sent, because it is not the usual situation:
+    #
+    #   - Every other posting so far said "one of Java, Python, C++, ..." and
+    #     Python satisfied it, so C++ came off at no cost. Here C++ is THE
+    #     required language, named alone in "You have", and Python is only in
+    #     "We prefer". Leaving C++ off does not make the application safer; it
+    #     makes it pointless.
+    #   - Testing fundamentals is likewise a hard requirement, and Pytest is
+    #     the only testing skill in the profile that matches their Python half.
+    #
+    # So the application exists only if he can actually write C++ and has
+    # actually written tests. If he cannot, the answer is not a different
+    # resume - it is a different req. See the notes file.
+    skill_exclude: [Go, Java, Rust, LangGraph, RAG, "Vector search", Embeddings,
+                    PyTorch, "scikit-learn", "GitHub Actions", Linux, Jest]
+    notes: >-
+      WEAKEST TECHNICAL MATCH IN THE FOLDER. Two of their four hard
+      requirements - C++ and testing - are unevidenced, and the req is
+      bachelor's-tier while he is a master's student. See
+      jobs/waymo-systems-swe-intern.notes.md before spending effort.
+
+  waymo-vv-masters:
+    label: "Waymo, SWE Intern - Fault Protection & Remote Assistance V&V (MS)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # THIS IS THE REQ THE OTHER WAYMO PRESET SHOULD HAVE BEEN. Their entire
+    # hard technical requirement is "experience with data analysis/modeling
+    # using Python and SQL" - both evidenced four and three times over. No C++,
+    # no testing-fundamentals requirement, and "currently enrolled in a MS
+    # program" is a requirement he MEETS rather than one he stretches to.
+    #
+    # The result is the first preset in this file with NOTHING unconfirmed on
+    # the page: no `ask: true` skill renders. Compare waymo-systems-2027, which
+    # cannot be sent without an answer on C++.
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi, flickmatch]
+      # LEAD ENGINE LEADS, and it is not close. Their fourth bullet is "build
+      # automated pipelines using Python and SQL to update, version and
+      # validate test coverage"; their second is "create dashboards to monitor,
+      # visualize and analyze fleet-wide fault rates". Lead Engine is a Python
+      # and SQL pipeline with a live dashboard where a failed scout surfaces
+      # the moment it fails. Two of their four bullets, one project.
+      projects: [lead_engine, torii, pash, portfolio]
+      leadership: []
+    # `general` sits ahead of `ml` on purpose. Both orders pick the dashboard
+    # variant, but with `ml` first the pipeline bullet falls back to the old
+    # cautious "public listing and county records" phrasing, and his standing
+    # instruction of 2026-09-05 is to NAME the scout sources.
+    prefer_flavors: [infra, general, backend, ml, research, teaching, frontend]
+    skill_order: [Languages, "Data & Cloud", "Backend & APIs",
+                  "AI & Agents", "Frontend & Mobile"]
+    # Python and SQL are the requirement, in that order, then the data surface.
+    skill_lead: [Python, SQL, PostgreSQL, SQLAlchemy, SQLite, MongoDB, AWS,
+                 Docker, "CI/CD", Git, FastAPI, REST, Recharts, React]
+    # C++ AND PYTEST COME OFF. They were on waymo-systems-2027 only because
+    # that posting made C++ a hard requirement and the application was
+    # meaningless without it. Nothing here asks for either, so there is no
+    # reason to carry an unconfirmed keyword into an interview.
+    skill_exclude: ["C++", Java, Go, Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Send this one instead of waymo-systems-2027 if only one Waymo slot is
+      spent. Both hard technical requirements are evidenced, the degree tier is
+      right, and nothing on the page is unconfirmed. See
+      jobs/waymo-vv-masters-intern.notes.md.
+
+  # ===========================================================================
+  # NYU ON-CAMPUS BATCH, 2026-09-06. Six postings, six selections over the same
+  # fact base. The reader for every one of these is a person - a professor, a
+  # department administrator, a director - not an ATS, so ordering is by what
+  # that person screens on, and the AI & Agents line is dropped where it would
+  # only be noise to them. Every `ask: true` skill is excluded on all six: an
+  # on-campus interview is fifteen minutes and there is no room to recover
+  # from a keyword he cannot defend.
+  #
+  # The one gate they share: work authorization is still open in
+  # checklists/intake.md. F-1 students CAN hold on-campus jobs without CPT,
+  # but the total is capped at 20 hours a week during term across every
+  # on-campus job combined - so he cannot hold more than one or two of these.
+  # ===========================================================================
+
+  nyu-gph-ra-2026:
+    label: "NYU School of Global Public Health, Graduate Research Assistant (Dean's Office, Dr. Bather)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # DELHI LEADS. This is a research assistantship and the Delhi entry is the
+    # only thing on the profile that says "has done research" rather than
+    # "has shipped apps". AI Society second: "develop clear summaries and
+    # written reports" and "synthesize findings" for a non-expert reader is
+    # what writing workshop materials for students with no background was.
+    # MyYogaTeacher third for the data work; WatchDNA for the Python pipeline.
+    # Flickmatch is off - a website revamp says nothing to a biostatistician.
+    entries:
+      experience: [delhi, aisociety, myyogateacher, watchdna]
+      # Lead Engine leads: it is a data pipeline (collect, deduplicate, score
+      # with written reasoning) with a live dashboard over it - the closest
+      # thing he has to "data analysis" and "data visualization" in one
+      # artifact. Torii for the audit ledger; Pash for the async job pipeline.
+      projects: [lead_engine, torii, pash, portfolio]
+      leadership: []
+    # `general` ahead of `ml` so the pipeline bullet names the scout sources
+    # (standing instruction, 2026-09-05) and the dashboard bullet is the
+    # monitoring one rather than the one-line frontend version.
+    prefer_flavors: [research, teaching, general, ml, infra, backend, mobile, frontend]
+    # Data line second, 2026-09-07: for a biostatistician the "AI & Agents"
+    # line (MCP, x402, LangChain) is the least legible on the page and the
+    # data line (PostgreSQL, SQLite) is what "data analysis" maps to. Gaussian
+    # Processes still opens the AI line, so the research keyword stays high.
+    # Frontend before Backend because Recharts leads it - the one
+    # "data visualization" term he has evidence for.
+    skill_order: [Languages, "Data & Cloud", "AI & Agents", "Frontend & Mobile",
+                  "Backend & APIs"]
+    skill_lead: [Python, SQL, "Gaussian Processes", spaCy, "Prompt engineering",
+                 "OpenAI API", "Claude API", Whisper, "LLM streaming",
+                 PostgreSQL, SQLite, SQLAlchemy, Recharts, React, "HTML/CSS",
+                 Git, FastAPI, REST]
+    # scikit-learn is the one exclusion that hurts here: a Gaussian Process
+    # classifier is a scikit-learn class, and the Delhi work very likely used
+    # it or GPy. It stays off until he names the tools - see the Delhi bullet
+    # rule in CLAUDE.md. Qualtrics, Zotero, Google Forms and R are NOT in the
+    # profile and are NOT to be added.
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Research genre. Delhi leads and is the whole argument; the Delhi
+      tools-and-impact bullet (CLAUDE.md) would double its weight. Gaps are
+      Qualtrics, Zotero, Google Forms, R and public health itself - report,
+      never fill. See jobs/nyu-gph-research-assistant-fall-2026.notes.md.
+
+  nyu-cfa-creative-tech-2026:
+    label: "NYU Center for Faculty Advancement, Creative Technologist Graduate Assistant"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    # PROJECTS FIRST, PORTFOLIO FIRST. The posting is "prototype a creative
+    # media platform", and a room modelled in Blender and rendered in the
+    # browser where every project opens as its own artifact IS a creative
+    # media platform prototype - the one thing on the profile that argues
+    # creative technology without a word of prose. Pash second: upload media,
+    # process it, hand it back - a media platform in miniature. Lead Engine
+    # for the React dashboard; Torii for the backend and API surface.
+    sections: [education, projects, experience, skills]
+    entries:
+      projects: [portfolio, pash, lead_engine, torii]
+      # WatchDNA leads Experience: backend from scratch, admin console, and a
+      # companion app on the same infrastructure is "front-end and back-end
+      # platform capabilities ... consistent experience across devices" in one
+      # entry. Flickmatch second: Figma designs to a shipped responsive site is
+      # the wireframe-to-prototype path they describe. Delhi is off.
+      experience: [watchdna, flickmatch, myyogateacher, aisociety]
+      leadership: []
+    prefer_flavors: [frontend, general, mobile, backend, infra, teaching, ml, research]
+    skill_order: ["Frontend & Mobile", Languages, "Backend & APIs", "Data & Cloud",
+                  "AI & Agents"]
+    skill_lead: [Wireframing, "User journeys", Figma, React, "React Native",
+                 "Three.js", Blender, Tailwind,
+                 Expo, "Material-UI", Vite, Recharts, Mapbox, TypeScript,
+                 JavaScript, "HTML/CSS", Python, SQL, "Node.js", REST,
+                 "Express.js", FastAPI, JWT, Supabase, PostgreSQL, AWS, SQLite,
+                 MCP, "OpenAI API", "Autonomous agents"]
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Strongest on-campus match on merit and the EARLIEST DEADLINE - September
+      14, 2026. The letter is one paragraph by their instruction, which
+      overrides the standard structure; see the letter draft. Video editing
+      and 3D design are on his LinkedIn services list but not in the profile -
+      ask before they appear anywhere. See
+      jobs/nyu-cfa-creative-technologist-fall-2026.notes.md.
+
+  nyu-stern-finance-asst-2026:
+    label: "NYU Stern Finance Department, Department Assistant (reception + web content)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # FLICKMATCH LEADS, out of date order and on purpose. "HTML experience is
+    # required" and "updating and maintaining content on the Finance
+    # Department website" is the job; revamping a whole website from Figma
+    # designs is the closest thing on the profile to it. WatchDNA second for
+    # the admin console - content operations on a live site. AI Society third:
+    # "strong organizational and communication skills" and this is the only
+    # entry that evidences either.
+    entries:
+      experience: [flickmatch, watchdna, aisociety, myyogateacher]
+      # Portfolio first - a website he built and maintains himself. Then the
+      # dashboard work. Torii is off: x402 payment flows are noise to an
+      # office administrator.
+      projects: [portfolio, lead_engine, pash]
+      leadership: []
+    prefer_flavors: [frontend, general, teaching, backend, mobile, infra, ml, research]
+    # No AI & Agents line. The reader is a department administrator screening
+    # for HTML and organisation, and a line of agent-protocol vocabulary
+    # reads as a different applicant.
+    skill_order: [Languages, "Frontend & Mobile", "Backend & APIs", "Data & Cloud"]
+    skill_lead: ["HTML/CSS", JavaScript, TypeScript, Python, SQL, React, Figma,
+                 "Material-UI", Tailwind, "Three.js", "Node.js", REST,
+                 "Express.js", PostgreSQL, Supabase, Git]
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Applied by EMAIL with a brief note of interest, not through Handshake -
+      the .txt letter is the artifact that ships, the PDF is a courtesy.
+      Reception-desk duties are half the job and nothing on the page speaks to
+      them; that is the letter's problem. See
+      jobs/nyu-stern-finance-dept-assistant-fall-2026.notes.md.
+
+  nyu-general-ra-2026:
+    label: "NYU General Research Assistant pool (Center for Undergraduate Research)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # A general pool that faculty across NYU draw from, so this is the widest
+    # honest picture with research first: Delhi, then the teaching, then the
+    # two engineering roles. Every project stays - the posting asks
+    # applicants to list the varied skills a lab might want, and the
+    # projects are where the breadth is (ML pipelines, audio, 3D, agents).
+    entries:
+      experience: [delhi, aisociety, myyogateacher, watchdna]
+      # Torii first since 2026-09-07: the letter's interest paragraph leads
+      # with accountability for autonomous agents, and the resume should
+      # show the same thing first.
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [research, general, ml, infra, teaching, backend, mobile, frontend]
+    skill_order: [Languages, "AI & Agents", "Data & Cloud", "Backend & APIs",
+                  "Frontend & Mobile"]
+    skill_lead: [Python, SQL, TypeScript, "Gaussian Processes",
+                 "Autonomous agents", "OpenAI API", "Claude API",
+                 "Prompt engineering", Whisper, spaCy, MCP, Demucs, PostgreSQL,
+                 SQLite, AWS, CUDA, FastAPI, REST, React, "Three.js", Blender]
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      The cover letter IS the application here - the posting asks for school,
+      course of study, subject interests and skills in the letter, and
+      supervisors pick from the pool on that. School prints as Tandon since
+      2026-09-07, inferred from his CS-GY registration and flagged to him. See
+      jobs/nyu-general-research-assistant-fall-2026.notes.md.
+
+  nyu-gallatin-gallery-2026:
+    label: "NYU Gallatin, Graduate Gallery Admin Assistant (Gallatin Galleries)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # WEAKEST FIT OF THE SIX, and the ordering is honest about what it has.
+    # AI Society leads because running workshops and study sessions is the
+    # only evidence on the profile of organising and staffing events and
+    # working with people who are not engineers. WatchDNA for the admin
+    # console and the locator - tracking things and their locations.
+    # Flickmatch for design sensibility (Figma). Delhi is off.
+    entries:
+      experience: [aisociety, watchdna, flickmatch, myyogateacher]
+      # Portfolio first: a hand-modelled room in Blender is the arts
+      # credential, and the posting asks for "enthusiasm for the arts". Pash
+      # for the music. Lead Engine for a live pipeline that tracks where
+      # every item is - the shape of "tracking where work is".
+      projects: [portfolio, pash, lead_engine]
+      leadership: []
+    prefer_flavors: [teaching, frontend, general, backend, mobile, infra, ml, research]
+    skill_order: ["Frontend & Mobile", Languages, "Backend & APIs", "Data & Cloud"]
+    # Wireframing and user journeys joined 2026-09-07 (myt.design): floor
+    # plans and lists of works are the same kind of drawing.
+    skill_lead: [Blender, "Three.js", Figma, Wireframing, "User journeys",
+                 React, "Material-UI", Tailwind,
+                 "HTML/CSS", JavaScript, TypeScript, Python, SQL, "Node.js",
+                 REST, PostgreSQL, Supabase, Git]
+    # ASANA IS NOT TO BE ADDED. The posting names it; nothing in the profile
+    # evidences it. Same for any gallery, shipping or insurance vocabulary.
+    # Java and Ruby are evidenced (coursework) but noise to an events
+    # director; excluded here, not because they are unconfirmed.
+    skill_exclude: [Go, Java, Ruby, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      No organisational or logistics evidence anywhere in the profile; the
+      letter carries this application or nothing does, and "why the arts" is
+      his to write. Twenty hours a week - on an F-1 that is the entire
+      on-campus allowance. See
+      jobs/nyu-gallatin-gallery-admin-fall-2026.notes.md.
+
+  nyu-bme-ca-2026:
+    label: "NYU Tandon Biomedical Engineering, Course Assistant BI-GY 810X (Dr. Brathwaite)"
+    max_pages: 1
+    bullets_per_entry: 3
+    one_line_skills: true
+    sections: [education, experience, projects, skills]
+    # AI SOCIETY LEADS - grading, answering student questions and writing
+    # solution examples is teaching, and this is the teaching entry. Delhi
+    # second: Python research on classifiers is the nearest thing to the
+    # course's data-science half. MyYogaTeacher third for the GenAI work the
+    # posting asks for (Whisper, streaming LLM). WatchDNA for the Python
+    # pipeline. Flickmatch is off.
+    entries:
+      experience: [aisociety, delhi, myyogateacher, watchdna]
+      # Lead Engine first: Python plus LLM scoring with the reasoning written
+      # out is "experience with GenAI" in one bullet. Torii second - LLM
+      # agents and MCP. Pash third: Demucs v4 is a deep-learning model in
+      # production, which is the honest extent of his deep-learning claim.
+      projects: [lead_engine, torii, pash]
+      leadership: []
+    prefer_flavors: [teaching, research, general, ml, infra, backend, mobile, frontend]
+    skill_order: [Languages, "AI & Agents", "Data & Cloud", "Backend & APIs"]
+    # Gaussian Processes sits third on the AI & Agents line, ahead of the LLM
+    # tooling. The 2026-09-06 build trimmed it off the end of that line to
+    # fit, and it is the one skill on this page that the Delhi entry - second
+    # in Experience here - actually earns. Moved forward 2026-09-07.
+    skill_lead: [Python, SQL, "OpenAI API", "Claude API", "Gaussian Processes",
+                 "Prompt engineering", "LLM streaming", "Autonomous agents",
+                 "Tool use", MCP, Whisper, Demucs, spaCy, SQLite, PostgreSQL,
+                 AWS, CUDA, Git, FastAPI, REST]
+    # R, numpy, pandas, seaborn, scipy, UNIX, nbgrader, Otter, Gradescope,
+    # genomics, PyTorch: the posting names all of them and the profile
+    # evidences none. Linux and PyTorch are `ask: true` and stay off. The
+    # Delhi tools question (CLAUDE.md) is the one that could honestly unlock
+    # numpy and scipy - ask before anything is added.
+    skill_exclude: [Go, Java, "C++", Rust, LangGraph, RAG, "Vector search",
+                    Embeddings, PyTorch, "scikit-learn", "GitHub Actions",
+                    Linux, Pytest, Jest]
+    notes: >-
+      Python and GenAI are evidenced; R and the grading toolchain are not.
+      Genomics is "helpful, not required". Campus CA genre - name the course.
+      See jobs/nyu-bme-course-assistant-fall-2026.notes.md.
+
+  full:
+    label: "Everything, keyword-dense, on one page."
+    max_pages: 1
+    # Each skills category is capped at a single rendered line. A wrapped line
+    # costs a whole row for two words, and capping them is what buys the
+    # vertical space to keep every role and project on the page.
+    one_line_skills: true
+    bullets_per_entry: 3
+    sections: [education, experience, projects, skills]
+    # Every role and every project that has real, confirmable content. What is
+    # missing is missing for a reason, listed in the notes below.
+    entries:
+      experience: [watchdna, myyogateacher, aisociety, delhi, flickmatch]
+      projects: [torii, lead_engine, pash, portfolio]
+      leadership: []
+    prefer_flavors: [general, backend, infra, ml, teaching, research, frontend]
+    skill_order: [Languages, "AI & Agents", "Backend & APIs",
+                  "Frontend & Mobile", "Data & Cloud"]
+    notes: >-
+      Deliberately absent: CovreliefDwarka, because May-Sep 2020 predates any
+      COVID vaccine and the claim as written is temporally impossible;
+      NeuroPilot, SentinalAI and Lynti, whose descriptions were truncated
+      mid-sentence in the LinkedIn export and cannot be written from half a
+      sentence; and the four contested metrics, which ship as mechanism
+      phrasings until Asmit says how each was measured.
+
+  swe-intern:
+    label: "Software engineering internship (Summer 2027)"
+    max_pages: 1
+    sections: [education, experience, projects, skills]
+    # AI Society sits under Leadership here rather than Experience, so the page
+    # does not read as three concurrent jobs in autumn 2025.
+    entries:
+      experience: [watchdna, myyogateacher, flickmatch]
+      projects: [torii, pash, lead_engine]
+      leadership: [aisociety]
+    prefer_flavors: [backend, general, mobile, infra]
+    skill_order: [Languages, "Backend & APIs", "Frontend & Mobile", "Data & Cloud", "AI & Agents"]
+    notes: >-
+      Closest to his current resume, and the one with a live deadline. Requires
+      the GitHub link: seven projects with no repositories reads as unverifiable.
+
+  campus-ta:
+    label: "Course assistant, grader, tutor"
+    max_pages: 1
+    sections: [education, experience, projects, skills]
+    # Teaching evidence IS the qualification, so AI Society is promoted to a
+    # full Experience entry and leads.
+    entries:
+      experience: [aisociety, watchdna, delhi, myyogateacher]
+      projects: [torii, pash]
+      leadership: []
+    prefer_flavors: [teaching, research, general]
+    skill_order: [Languages, "Backend & APIs", "Data & Cloud"]
+    notes: >-
+      Add the NYU coursework line once the course list is known - grader
+      postings gate on having taken the course. One engineering role stays for
+      credibility; one project maximum.
+
+  ra-research:
+    label: "Research assistant, lab position, professor outreach"
+    max_pages: 1
+    sections: [education, experience, projects, skills]
+    entries:
+      experience: [delhi, myyogateacher, aisociety]
+      projects: [torii, pash]
+      leadership: []
+    prefer_flavors: [research, ml, infra]
+    skill_order: [Languages, "ML & Research", "Data & Cloud"]
+    notes: >-
+      The Delhi Gaussian Process work leads and is the whole point of this
+      variant - it is the only entry that says "has done research". Pairs with a
+      professor email, not a cover letter.
+
+  ml-ai-infra:
+    label: "ML / AI infrastructure roles"
+    max_pages: 1
+    sections: [education, projects, experience, skills]
+    # Projects first: the agent-payments work is the thing almost no other
+    # student has, and it should be the first thing read.
+    entries:
+      experience: [myyogateacher, watchdna, delhi]
+      projects: [torii, lead_engine, pash]
+      leadership: []
+    prefer_flavors: [infra, ml, backend]
+    skill_order: ["AI & Agents", Languages, "Backend & APIs", "Data & Cloud"]
+    notes: >-
+      Torii leads, with the one-day build and two-dependencies details intact.
+      MCP and x402 are a genuinely rare surface for a first-year master's student.
+
+# Skill category assignment. A skill appears in exactly one category, and only
+# if it has evidence in profile.yaml.
+skill_categories:
+  # A skill appears in exactly one category, and prints only if profile.yaml
+  # backs it. Categories are wide on purpose: the goal is a full line, not a
+  # tidy taxonomy.
+  Languages: [TypeScript, JavaScript, Python, SQL, "HTML/CSS", Go, Java, Ruby, "C++", Rust]
+
+  "AI & Agents": [MCP, x402, LangChain, LangGraph, "OpenAI API", "Claude API",
+                  Whisper, RAG, "Vector search", Embeddings, Pinecone,
+                  "Autonomous agents", "Tool use", "Prompt engineering",
+                  "LLM streaming", spaCy, "scikit-learn", PyTorch, YOLOv8,
+                  Demucs, "Gaussian Processes"]
+
+  "Backend & APIs": ["Node.js", "Express.js", FastAPI, Flask, Bun, Hono, REST,
+                     GraphQL, WebSocket, JWT, "Role-based access control",
+                     SQLAlchemy, Uvicorn, Selenium]
+
+  "Frontend & Mobile": [React, "React Native", Expo, Tailwind, NativeWind,
+                        "Material-UI", "Three.js", Blender, Vite, Recharts,
+                        Electron, Figma, Mapbox, "iOS App Store", Wireframing, "User journeys", Accessibility]
+
+  "Data & Cloud": [PostgreSQL, Supabase, MongoDB, SQLite, Firebase, AWS, CUDA,
+                   Docker, "CI/CD", Automation, DevOps, "Software testing",
+                   GitHub, Jira, Agile,
+                   "GitHub Actions", Git, Linux, Pytest, Jest]
+
+  # Narrower buckets some presets still use.
+  "Backend & Data": ["Node.js", FastAPI, Bun, Hono, "Express.js", Flask,
+                     PostgreSQL, Supabase, SQLite, AWS, Docker]
+  "AI & ML": [MCP, x402, Whisper, "Gaussian Processes"]
+  "ML & Research": ["Gaussian Processes"]

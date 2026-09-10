@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>Resume</title>
+<style>
+html, body, .container {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+</style>
+<style>@page {
+  size: letter;
+  margin: 1.0in;
+}
+</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+
+body {
+  font-family: Tinos, 'Times New Roman', Times, serif;
+  font-size: 15.48px;
+  line-height: 1.46;
+  color: #000;
+  margin: 0;
+  font-variant-ligatures: none;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "lnum" 1, "onum" 0;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+}
+
+a { color: #000; text-decoration: none; border-bottom: 0.4px solid #999; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30.74px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.contact { font-size: 12.93px; margin: 3.18px 0 0; }
+.contact .sep { padding: 0 3.18px; }
+
+.rule {
+  border-bottom: 1px solid #000;
+  margin: 8.48px 0 14.84px;
+}
+
+.meta { font-size: 13.78px; margin: 0 0 14.84px; }
+
+p { margin: 0 0 11.66px; }
+
+/* The signpost. A soft wash, not a marker pen - it should read as a considered
+   typographic choice rather than something left over from a mail merge. */
+.hl {
+  background: #fdf3b8;
+  padding: 1.06px 3.18px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.signpost { font-size: 14.2px; margin: 0 0 11.66px; }
+.sig { margin-top: 16.96px; }
+</style>
+</head><body>
+<h1>Asmit Datta</h1>
+<p class="contact"><span>New York, NY</span> <span class="sep">·</span> <span>asmit77@icloud.com</span> <span class="sep">·</span> <span><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space">asmit.space</a></span> <span class="sep">·</span> <span><a target="blank" rel="noopener noreferrer" href="https://github.com/sm11t">github.com/sm11t</a></span> <span class="sep">·</span> <span><a target="blank" rel="noopener noreferrer" href="https://linkedin.com/in/asmitrajeet">linkedin.com/in/asmitrajeet</a></span></p>
+<div class="rule"></div>
+<p class="meta">September 2026<br>Creative Technologist Graduate Assistant<br>Alexandria Meier, Center for Faculty Advancement, New York University</p>
+<p>First, I would like to talk about how I approach problems, how I get better at them, and how I work in a team. I accept it when I fall short of understanding something, and I give my best to understand it from people better than me. I have a lot of respect for anyone I can learn from, and I am not ashamed to ask the same question twice if that is what it takes. It works the other way too. When someone is stuck on something I have already worked out, I will sit with them rather than hand over the answer, and I come out of those understanding it better than when I went in. Knowledge seems to be one of the few things that grows when you share it. I think about problems in systems, and I approach them that way. I think that is also what makes me useful explaining something to someone else - I still remember what it is like to not understand it yet.</p>
+<p class="signpost"><i>I would encourage you to visit my portfolio at www.asmit.space.</i></p>
+<p>After reading the requirements, I would like to give a few examples of the work I have done that show I am ready for this role. Across my internships the job has mostly been taking an idea, turning it into a workflow and a user journey, and then building it. At MyYogaTeacher I was handed a feature as a high-level idea and asked to produce the initial design - the diagrams, wireframes and user journeys. Those went out to the development team I was also part of, so I built against my own drawings. My portfolio works the same way. It is a room I modelled in Blender and put in the browser with Three.js, where you walk up to the desk, click the machine, and every project opens as its own artifact. At WatchDNA I set up the backend from scratch on Node.js - the schema, the REST endpoints, JWT authentication with role-based access and the security middleware - and built the admin console over it. The companion React Native app reused the same auth and data layers. Pash is a media pipeline. Uploads land in S3, jobs queue through SQS so a worker dying does not lose the job, and Demucs splits each track on a remote CUDA worker. The MyYogaTeacher client streams biometric data with offline-first sync and time-series deduplication, so nothing is lost when the network drops. Lead Engine's dashboard is a live pipeline graph where a failed scout shows up the moment it fails, and on everything I have shipped I hook up alerts for when something goes wrong, so it gets debugged and fixed right away. I can work between five and fifteen hours a week as the work requires, and with no classes on Monday or Thursday I can figure out a flexible schedule around the in-person meetings.</p>
+</body></html>

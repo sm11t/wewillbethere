@@ -1,0 +1,1051 @@
+# Asmit Datta - master fact base.
+#
+# THE RULE THAT MAKES THIS WORK: tailoring is SELECTION, never GENERATION.
+# The renderer prints `text:` fields verbatim and has no free-text path. To say
+# something new, a variant is added here, reviewed, and marked approved: true.
+# Nothing that has not passed under human eyes can reach a PDF.
+#
+# Every number carries provenance. `needs_confirmation` is a hard render block:
+# a figure that cannot be defended end-to-end in an interview is worse than no
+# figure, because it poisons every other number on the page.
+#
+# approved: false everywhere below is correct and deliberate. Asmit has not read
+# these yet. Read each aloud; if it does not sound like you said it, edit it.
+
+meta:
+  schema_version: "1.0.0"
+  owner: asmit-datta
+  last_updated: "2026-09-02"
+  sources:
+    resume_2026:
+      kind: resume_pdf
+      note: "resume_asmit_2026-07-21.pdf, text extracted 2026-09-02"
+    li_2026:
+      kind: linkedin_export
+      note: "profile + projects PDF export, 2026-09-02"
+    site_2026:
+      kind: portfolio_site
+      note: "asmit.space project pages fetched 2026-09-02"
+    build_ctx:
+      kind: session_context
+      note: "WatchDNA development sessions: Expo, Supabase, iOS App Store review"
+    user_2026-09-04:
+      kind: confirmed_by_asmit
+      note: "Employer locations, stated directly: WatchDNA is in Ontario,
+        Canada; MyYogaTeacher in San Diego, California. Also: at Flickmatch he
+        revamped the entire website, not just individual components - the
+        scope was the whole site."
+    user_2026-09-05:
+      kind: confirmed_by_asmit
+      note: "Lead Engine: the scout sources are to be named on public documents
+        - Zillow, Redfin, FSBO, expired listings and the Maricopa County
+        Assessor - and the scouting runs constantly rather than on demand.
+        All five are already published on his own site and LinkedIn. Also:
+        Pash links to https://lnkd.in/p/dCwX6kYm, not asmit.space/pash."
+    user_2026-09-07:
+      kind: confirmed_by_asmit
+      note: "Work authorization: F-1 student visa. Typed into the Fall 2026
+        Campus Desk artifact (desk/shared, field auth) on 2026-09-07. On-campus
+        employment is permitted without CPT or OPT, capped at 20 hours a week
+        across all on-campus jobs combined during term; Federal Work-Study
+        postings are closed. SSN status still unanswered (desk field ssn blank).
+        Same day, in chat: his Fall 2026 class schedule (Albert screenshot) -
+        CS-GY 6033 Design and Analysis of Algorithms I, Kahrobaei, Tue 5:00-7:30
+        PM, Jacobs Hall 6 MetroTech; CS-GY 6613 Artificial Intelligence I,
+        Monogioudis, Fri 11:00 AM-1:30 PM, Jacobs Hall 6 MetroTech; and a third
+        class Wed 6:00-8:30 PM (name not given). His words on availability: 'I
+        can figure out a flexible schedule around my classes.' The CS-GY prefix
+        and the 6 MetroTech location are Tandon's, so the school is INFERRED as
+        Tandon School of Engineering - not yet confirmed in his words.
+        Later the same day, for the CFA letter, in his words: 'across all my
+        internships, my job has just been this, converting an idea into a
+        workflow and journey.' At MyYogaTeacher he 'was given the
+        responsibility to create the initial design for a feature of the app
+        ... converting high level ideas into diagrams and wireframes and user
+        journeys which was then distributed across the development team which
+        I was also a part of.' At WatchDNA 'the systems that I built were made
+        making sure they are reliable and efficient and most importantly user
+        friendly.' Across all products he has 'hooked up notification alerts
+        for when something goes wrong which is debugged instantly and fixed.'
+        NOT YET NAMED: which feature, which design tool, which alert channel.
+        Standing instruction, same evening: keywords a posting names may be
+        added to the resume when missing, because 'I have taken everything
+        in some or the other class' - the goal is keyword matching. Each such
+        skill gets evidence [coursework_2026-09-07]; the interview answer is
+        the course. First applied: Java and Ruby, for Betterment; then Go, for
+        Dropbox. Same evening, his words on AI tooling, for the Dropbox letter:
+        'I am efficient with the AI tools I use. I know how to utilise agents
+        well in terms of token spending usage, parallelisation and efficient
+        prompting ... techniques like harness engineering and agentic
+        workflows.' Recorded as his practice; the evidence on the page stays
+        Lead Engine (five scouts in parallel, reasoning written out) and Torii
+        (budget reserved per call, policy, ledger).
+        Later still, his words on what the internships achieved: at WatchDNA
+        'the tools built ... are so important for driving user traffic and
+        increased traffic within 6 months of usage ... I replaced the service
+        provider expensive app with an inhouse built version cutting down
+        costs for the business that would be spent paying for these
+        services.' At MyYogaTeacher: 'mention the time saved and value
+        provided.' And: 'I am always building new things and experimenting
+        with new technology and keep myself updated.' Recorded as wd.impact
+        and myt.voicesql.time, no numbers - none were given.
+        Same evening, on the MiniMed posting (not eligible - F-1): 'mention
+        terms like automation devops and testing for my work in the resumes.'
+        Applied as skills Automation (project evidence), DevOps and Software
+        testing (coursework evidence), and the wd.locator.auto phrasing.
+        For ICF (same evening): GitHub added on real evidence (the portfolio
+        repo at github.com/sm11t); Jira and Agile on coursework evidence under
+        the standing rule - the capstone was a course. Salesforce, ServiceNow,
+        Appian and Power Platform were NOT added: a class does not cover them
+        and nothing records them. For Microsoft (same evening): Accessibility
+        added on coursework evidence - the posting names 'accessibility
+        principles' twice; no project records it. C# and Angular were NOT
+        added: the posting says 'or similar' and Node.js, Python and React
+        satisfy it outright. For Rilla (same evening), his words: 'I have
+        worked at 3 startups making a big effect on their operations. first
+        ever was to revamp their frontend fully' (Flickmatch). So WatchDNA,
+        MyYogaTeacher and Flickmatch are startups on his word - tag added.
+        And, for application answers: the role's field visits and talking to
+        customers are what excites him most; understanding a customer's need
+        is 'where I would shine'. GitHub Actions added on coursework evidence
+        (the posting names it); Terraform, Spacelift, Turborepo, Zod, Lodash
+        NOT added - nothing records them."
+    # Add a new user_YYYY-MM-DD entry the day Asmit confirms something else.
+    # Until then it does not exist and nothing may cite it.
+
+basics:
+  name: "Asmit Datta"
+  email: "asmit77@icloud.com"
+  phone: null                 # [BLOCKER] every application portal requires one
+  work_authorization:
+    status: f1_student
+    source: user_2026-09-07
+    ssn: unknown
+    note: >-
+      Backs the eligibility line in campus cover letters ("I am on an F-1 visa,
+      which permits on-campus employment without further authorization"). It
+      does NOT answer sponsorship screening questions on internship portals -
+      those stay his, per hard rule 3. 20 hrs/wk cap in term across every
+      on-campus job combined.
+  availability_fall_2026:
+    source: user_2026-09-07
+    his_words: "I can figure out a flexible schedule around my classes."
+    class_days: [Tue evening, Wed evening, Fri late morning]
+    no_class_days: [Mon, Thu]
+    note: >-
+      Backs the days sentence in every Fall 2026 campus letter. Total on-campus
+      hours he wants (intake #13) and which of the six jobs he takes are still
+      open; the 20 hrs/wk F-1 cap is shared across all of them.
+  location:
+    render: "New York, NY"
+    note: >-
+      LinkedIn still says Tempe, AZ and carries a stale "Open to work - Tempe, AZ"
+      banner. He is at NYU in NYC. Never render Tempe. Fix LinkedIn upstream.
+  links:
+    - {label: portfolio, render_as: "asmit.space", url: "https://www.asmit.space"}
+    - {label: linkedin, render_as: "linkedin.com/in/asmitrajeet",
+       url: "https://linkedin.com/in/asmitrajeet"}
+    - {label: github, render_as: "github.com/sm11t",
+       url: "https://github.com/sm11t"}
+    # GitHub found 2026-09-05 in the portfolio repo's own git config
+    # (user.name = sm11t, remote = github.com/sm11t/asmit-space) and used on the
+    # Primer application at his instruction. This closes what was the longest-
+    # standing blocker on every SWE preset. It is observed, not confirmed by him
+    # in words - if the account is not his, it comes straight back out.
+
+education:
+  - id: nyu
+    institution: "New York University"
+    degree: "M.S. in Computer Science"
+    grad_display: "Expected 2028"     # becomes "Expected May 2028" once confirmed
+    location: "New York, NY"
+    gaps: [gpa, start_date, program_name_as_on_transcript]
+    # Not rendered by build.py (which reads institution, degree, grad_display,
+    # location only). Recorded so the next session does not re-derive it.
+    school_inferred:
+      value: "Tandon School of Engineering"
+      source: user_2026-09-07
+      basis: >-
+        His Fall 2026 schedule shows CS-GY course codes taught in Jacobs Hall,
+        6 MetroTech Center, Brooklyn. CS-GY is Tandon's graduate CS prefix
+        (Courant's is CSCI-GA) and 6 MetroTech is the Tandon campus. Entailed,
+        not guessed - but he has not said the word "Tandon", so it stays off
+        the rendered education line until he does. Printed once, in the
+        general RA pool letter (2026-09-07), because that letter requires a
+        school; flagged to him in the reply that shipped it.
+    fall_2026_courses:
+      source: user_2026-09-07
+      classes:
+        - {code: "CS-GY 6033", title: "Design and Analysis of Algorithms I",
+           instructor: Kahrobaei, day: Tue, time: "5:00-7:30 PM"}
+        - {code: "CS-GY 6613", title: "Artificial Intelligence I",
+           instructor: Monogioudis, day: Fri, time: "11:00 AM-1:30 PM"}
+        - {code: null, title: null, day: Wed, time: "6:00-8:30 PM"}
+    note: >-
+      School was UNKNOWN until 2026-09-07 and is now inferred (see
+      school_inferred). Never print a school he has not named himself.
+
+  - id: asu
+    institution: "Arizona State University"
+    degree: "B.S. in Computer Science, Minor in Business"
+    grad_display: "May 2026"
+    location: "Tempe, AZ"
+    gaps: [gpa, honors]
+    note: "Print GPA only if >= 3.5, formatted 'GPA: X.XX/4.00'."
+
+experience:
+  - id: watchdna
+    org: "WatchDNA"
+    role: "Software Engineer Intern (Capstone)"
+    dates: "Aug 2025 – Apr 2026"
+    location: "Ontario, Canada (Remote)"
+    location_provenance: {source: user_2026-09-04, status: verified}
+    tags: [backend, mobile, fullstack, auth, geo, typescript]
+    metrics: []          # none exist for this role; the variants correctly carry none
+    note: >-
+      Keep "(Capstone)" in the title. It is true, and it explains why this
+      overlapped two other roles - which otherwise reads as a red flag.
+    facts:
+      - id: wd.locator
+        canonical: >-
+          Store locator: Mapbox map, real-time filtering, admin console,
+          automated Python endpoint-discovery pipeline.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          # Listed first so it wins the tie: the canonical's own word,
+          # "automated", on the page (his instruction, 2026-09-07).
+          - id: wd.locator.auto
+            length: long
+            flavor: general
+            approved: false
+            uses_metrics: []
+            keywords: [automation, Mapbox, admin console]
+            text: >-
+              Built WatchDNA's store locator: an interactive Mapbox map with
+              real-time filtering, an admin console for data operations, and
+              an automated Python pipeline that discovers retailer endpoints
+              without anyone pointing it at them
+          - id: wd.locator.full
+            length: long
+            flavor: general
+            approved: false
+            uses_metrics: []
+            keywords: [Mapbox, Python, admin console]
+            text: >-
+              Built WatchDNA's store locator: an interactive Mapbox map with
+              real-time filtering, an admin console for data operations, and a
+              Python pipeline that discovers retailer endpoints on its own
+          - id: wd.locator.short
+            length: short
+            flavor: general
+            approved: false
+            uses_metrics: []
+            keywords: [Mapbox]
+            text: >-
+              Built an interactive Mapbox store locator with real-time filtering
+              and an admin console
+
+      - id: wd.infra
+        canonical: >-
+          Full backend from scratch: databases, JWT auth with role-based access,
+          security middleware.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          - id: wd.infra.backend
+            length: medium
+            flavor: backend
+            approved: false
+            uses_metrics: []
+            keywords: [JWT, role-based access, middleware, databases]
+            text: >-
+              Set up the backend from scratch - databases, JWT authentication
+              with role-based access, and the security middleware around it
+          - id: wd.infra.stack
+            length: long
+            flavor: general
+            approved: false
+            uses_metrics: []
+            keywords: [Node.js, REST, JWT, role-based access, PostgreSQL]
+            note: >-
+              Same fact as wd.infra.backend, naming the stack it was built on.
+              Node.js, REST and PostgreSQL are all already evidenced against
+              this entry - this variant exists so they appear inside a bullet
+              and not only in the skills block, which is what postings that
+              name a stack (PayPal, Stoke) actually search.
+            text: >-
+              Set up the backend from scratch on Node.js - the database schema,
+              the REST endpoints, JWT authentication with role-based access,
+              and the security middleware around it
+
+      - id: wd.companion
+        canonical: >-
+          Companion app on the same infrastructure, reusing auth, security and
+          data layers. React Native (Expo) + Supabase; taken through iOS App
+          Store review including Guideline 2.1 correspondence.
+        provenance: {source: li_2026, status: self_reported}
+        enrichment: {source: build_ctx, status: self_reported}
+        requires_confirmation: [appstore_outcome]
+        variants:
+          - id: wd.companion.short
+            length: short
+            flavor: general
+            approved: false
+            uses_metrics: []
+            text: >-
+              Shipped a companion app on the same infrastructure, reusing the
+              auth, security, and data layers
+          - id: wd.companion.ios
+            length: medium
+            flavor: mobile
+            approved: false
+            uses_metrics: []
+            requires_confirmation: [appstore_outcome]
+            keywords: [React Native, Expo, Supabase, iOS]
+            note: >-
+              "took it through App Store review" is safe today. "launched" is NOT,
+              until he confirms the app is live.
+            text: >-
+              Shipped a companion React Native app on Expo and Supabase that
+              reused the same auth and data layers, and took it through iOS App
+              Store review
+
+      - id: wd.alerts
+        canonical: >-
+          Failure alerts wired into what he shipped, so a broken endpoint or
+          pipeline step is seen and fixed right away.
+        provenance: {source: user_2026-09-07, status: verified}
+        note: >-
+          His words, 2026-09-07, stated for every product he has built; recorded
+          here because WatchDNA is the production system. The alert channel
+          (email, Slack, Sentry, CloudWatch ...) is not yet named - ask.
+        variants:
+          - id: wd.alerts.short
+            length: medium
+            flavor: infra
+            approved: false
+            uses_metrics: []
+            keywords: [alerts, monitoring]
+            text: >-
+              Hooked up failure alerts so a broken endpoint or pipeline step is
+              seen and fixed right away
+
+      - id: wd.impact
+        canonical: >-
+          The in-house store locator and admin console replaced an expensive
+          third-party app the company had been paying for, and traffic was up
+          within six months of going live.
+        provenance: {source: user_2026-09-07, status: verified}
+        note: >-
+          His words, 2026-09-07. No figure for the cost saved or the traffic
+          increase - none given; a number ships only with its mechanism. Which
+          third-party app, and what "traffic" was measured on, are still to
+          ask. Flavor "impact" so it does not render on existing resumes until
+          a preset asks for it; the letters carry it.
+        variants:
+          - id: wd.impact.short
+            length: medium
+            flavor: impact   # no preset prefers it: renders only on request
+            approved: false
+            uses_metrics: []
+            keywords: [cost, traffic, in-house]
+            text: >-
+              Replaced the paid third-party locator app with the in-house build,
+              cutting a recurring cost, and traffic was up within six months of
+              it going live
+
+  - id: myyogateacher
+    org: "MyYogaTeacher"
+    role: "Software Engineer Intern"
+    dates: "May 2025 – Jan 2026"
+    location: "San Diego, CA (Remote)"
+    location_provenance: {source: user_2026-09-04, status: verified}
+    tags: [mobile, ml, llm, python, react-native, startup]
+    metrics:
+      - id: uptime
+        value: "99.9% uptime"
+        provenance:
+          source: li_2026
+          status: needs_confirmation
+          note: >-
+            His own wording, but "uptime" of a mobile client is a category error
+            an interviewer will probe - uptime of what, measured how, over what
+            window? BLOCKED until he says. The mechanism variant ships meanwhile
+            and is arguably the better bullet anyway.
+      - id: admin_cut
+        value: "60%"
+        provenance:
+          source: li_2026
+          status: needs_confirmation
+          note: "Measured against what baseline, over what period? Ask before shipping."
+    facts:
+      - id: myt.biometrics
+        canonical: >-
+          Production React Native app streaming real-time biometric data;
+          offline-first sync with time-series deduplication.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          - id: myt.biometrics.mech
+            length: long
+            flavor: mobile
+            approved: false
+            uses_metrics: []
+            keywords: [React Native, offline-first, time-series]
+            text: >-
+              Wrote the React Native client that streams biometric data in real
+              time, with offline-first sync and time-series deduplication so
+              nothing is lost when the network drops
+          - id: myt.biometrics.metric
+            length: long
+            flavor: mobile
+            approved: false
+            uses_metrics: [uptime]      # BLOCKED while uptime is needs_confirmation
+            text: >-
+              Built a production React Native app streaming real-time biometric
+              data with offline-first sync and time-series deduplication, holding
+              99.9% uptime on flaky networks
+
+      - id: myt.design
+        canonical: >-
+          Produced the initial design for a new app feature from a high-level
+          idea - diagrams, wireframes and user journeys - distributed to the
+          development team he was also part of.
+        provenance: {source: user_2026-09-07, status: verified}
+        note: >-
+          His words, 2026-09-07. The feature, the design tool and whether the
+          drawings survive are not yet named - ask before any of those appear.
+        variants:
+          - id: myt.design.full
+            length: long
+            flavor: frontend
+            approved: false
+            uses_metrics: []
+            keywords: [wireframes, user journeys, diagrams]
+            text: >-
+              Produced the initial design for a new app feature from a
+              high-level idea - the diagrams, wireframes and user journeys -
+              and handed it to the development team I was part of, so I built
+              against my own drawings
+          - id: myt.design.short
+            length: medium
+            flavor: general
+            approved: false
+            uses_metrics: []
+            keywords: [wireframes, user journeys]
+            text: >-
+              Turned a high-level feature idea into diagrams, wireframes and
+              user journeys for the development team, then built against them
+
+      - id: myt.voicesql
+        canonical: >-
+          Voice-to-SQL pipeline using Whisper and streaming LLM responses,
+          replacing the admin team's Ctrl+F-and-edit workflow.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          - id: myt.voicesql.mech
+            length: medium
+            flavor: ml
+            approved: false
+            uses_metrics: []
+            keywords: [Whisper, LLM, SQL]
+            note: "Ships today - no contested numbers, and the Ctrl+F detail is his."
+            text: >-
+              Shipped a voice-to-SQL pipeline on Whisper with streaming LLM
+              responses that replaced the admin team's Ctrl+F-and-edit workflow
+          - id: myt.voicesql.metric
+            length: medium
+            flavor: ml
+            approved: false
+            uses_metrics: [admin_cut]   # BLOCKED while admin_cut is needs_confirmation
+            text: >-
+              Shipped a voice-to-SQL pipeline on Whisper with streaming LLM
+              responses that cut the admin team's manual edit work by about 60%
+
+      - id: myt.voicesql.time
+        canonical: >-
+          The voice-to-SQL pipeline gave the admin team back the time the
+          Ctrl+F-and-edit workflow had taken.
+        provenance: {source: user_2026-09-07, status: verified}
+        note: >-
+          His words: "mention the time saved and value provided." The 60% edit
+          cut remains blocked (needs_confirmation); this states the saving
+          without a number. Flavor "impact"; the letters carry it.
+        variants:
+          - id: myt.voicesql.time.short
+            length: medium
+            flavor: impact   # no preset prefers it: renders only on request
+            approved: false
+            uses_metrics: []
+            keywords: [time saved]
+            text: >-
+              Gave the admin team back the hours the Ctrl+F-and-edit workflow
+              had taken, by replacing it with the voice-to-SQL pipeline
+
+  - id: aisociety
+    org: "The AI Society at ASU"
+    role: "Technical Officer"
+    dates: "Aug 2025 – Jan 2026"
+    location: "Tempe, AZ"
+    tags: [teaching, mentoring, leadership, ml]
+    note: >-
+      Currently buried as a fragment inside the ASU education line. That is both
+      an ATS parsing hazard and a waste: for a course-assistant or grader role,
+      this IS the qualification.
+    metrics:
+      - {id: mentees, value: "4", provenance: {source: li_2026, status: self_reported}}
+      # No workshop headcount exists. No variant may imply scale.
+    facts:
+      - id: ais.mentoring
+        canonical: >-
+          Mentored a team of 4 freshmen through their first ML project: emotion
+          detection from facial expressions and audio cues.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          - id: ais.mentoring.t
+            length: medium
+            flavor: teaching
+            approved: false
+            uses_metrics: [mentees]
+            keywords: [mentored, ML, teaching]
+            text: >-
+              Mentored four freshmen through their first ML project, an emotion
+              detection system reading facial expressions and audio cues
+      - id: ais.workshops
+        canonical: >-
+          Built teaching materials and ran workshops and study sessions on AI/ML
+          fundamentals for students of all majors.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          - id: ais.workshops.ran
+            length: medium
+            flavor: teaching
+            approved: false
+            uses_metrics: []
+            keywords: [workshops, study sessions, teaching, curriculum]
+            note: >-
+              Same fact as ais.workshops.t, opening on the organising verb.
+              Added 2026-09-07 because the Gallatin preset put three "Wrote"
+              openers on one page (this line, the MyYogaTeacher client, the
+              Flickmatch state management) and the voice lint flags a third.
+              Listed first so it wins the tie: on every campus preset the AI
+              Society entry leads, and "Ran workshops" is the verb a
+              non-engineer reader is screening for. "Study sessions" is in
+              the canonical and had never reached a bullet.
+            text: >-
+              Ran workshops and study sessions that made machine learning
+              approachable to students with no technical background, and wrote
+              the materials for them
+          - id: ais.workshops.t
+            length: medium
+            flavor: teaching
+            approved: false
+            uses_metrics: []
+            keywords: [workshops, teaching, curriculum]
+            text: >-
+              Wrote the materials for and ran workshops that made machine
+              learning approachable to students with no technical background
+
+  - id: delhi
+    org: "University of Delhi"
+    role: "Research Study Assistant"
+    dates: "May 2024 – Aug 2024"
+    location: "New Delhi, India"
+    tags: [research, ml, gaussian-processes, python]
+    note: >-
+      MISSING from the current resume entirely. This is his single best
+      credential for a research assistantship or a grader role, and it is the
+      one thing on the profile that says "has done research" rather than
+      "has shipped apps".
+    gaps: [dataset, methods, results, publication]
+    facts:
+      - id: du.gpc
+        canonical: >-
+          Worked under Prof. R. P. Singh optimizing Gaussian Process Classifiers
+          for high-dimensional data modeling.
+        provenance: {source: li_2026, status: self_reported}
+        variants:
+          - id: du.gpc.r
+            length: medium
+            flavor: research
+            approved: false
+            uses_metrics: []
+            keywords: [Gaussian Process, research, high-dimensional]
+            text: >-
+              Worked under Prof. R. P. Singh on optimizing Gaussian Process
+              classifiers for high-dimensional data
+
+  - id: flickmatch
+    org: "Flickmatch"
+    role: "Software Engineer Intern"
+    dates: "May 2023 – Aug 2023"
+    location: "New Delhi, India"
+    tags: [frontend]
+    note: "Oldest role. First to drop when space is tight."
+    facts:
+      - id: fm.ui
+        canonical: >-
+          Revamped the entire Flickmatch website: implemented the new Figma
+          designs as responsive React and Material-UI components across the
+          site.
+        provenance: {source: li_2026, status: self_reported}
+        scope_provenance: {source: user_2026-09-04, status: verified}
+        note: >-
+          The scope is his, stated directly - the whole site, not a set of
+          components. The LinkedIn export only said "re-engineered web app
+          components", which undersold it. React is not a separate claim:
+          Material-UI is a React component library.
+        variants:
+          - id: fm.ui.full
+            length: long
+            flavor: frontend
+            approved: false
+            uses_metrics: []
+            keywords: [Figma, Material-UI, React, responsive]
+            text: >-
+              Revamped Flickmatch's website end to end, turning the new Figma
+              designs into responsive React and Material-UI components across
+              every page
+          - id: fm.ui.short
+            length: short
+            flavor: frontend
+            approved: false
+            uses_metrics: []
+            keywords: [Figma, Material-UI, responsive]
+            text: >-
+              Revamped Flickmatch's website end to end from new Figma designs
+
+      - id: fm.state
+        canonical: >-
+          Built modular state management logic so the site could scale.
+        provenance: {source: li_2026, status: self_reported}
+        note: >-
+          On his LinkedIn but never on the resume. Worth having: it is the only
+          architecture claim in the entry, where everything else is visual.
+        variants:
+          - id: fm.state.med
+            length: medium
+            flavor: frontend
+            approved: false
+            uses_metrics: []
+            keywords: [state management, modular, scalability]
+            text: >-
+              Wrote the state management as modular pieces rather than
+              per-page, so the same logic carried across the site as it grew
+
+projects:
+  - id: torii
+    name: "Torii"
+    url: "asmit.space/kya"
+    href: "https://www.asmit.space/kya"
+    dates: "2026"
+    tags: [agents, mcp, payments, typescript, infra]
+    stack: "TypeScript, Bun, Hono, SQLite"
+    metrics:
+      - {id: one_day, value: "in a day",
+         provenance: {source: site_2026, status: self_reported}}
+      - {id: two_deps, value: "two production dependencies",
+         provenance: {source: li_2026, status: self_reported}}
+      - {id: loc, value: "~700 lines",
+         provenance: {source: site_2026, status: self_reported}}
+    facts:
+      - id: torii.core
+        canonical: >-
+          MCP proxy enforcing identity, policy, budget and audit between AI
+          agents and paid tools: JWT agent identity, JSON policy engine,
+          pre-authorization budget tracker, SQLite audit ledger.
+        provenance: {source: [li_2026, site_2026], status: self_reported}
+        variants:
+          - id: torii.core.infra
+            length: long
+            flavor: infra
+            approved: false
+            uses_metrics: []
+            keywords: [MCP, JWT, policy engine, SQLite, audit]
+            text: >-
+              Put an MCP proxy between AI agents and the paid tools they call,
+              enforcing identity, policy and budget on every request: JWT agent
+              identity, a JSON policy engine, and a SQLite ledger recording every
+              call and every reason one was blocked
+      - id: torii.pay
+        canonical: >-
+          x402 payment handling: intercepts HTTP 402, checks wallet balance,
+          pays on the agent's behalf, retries. Pre-authorization budget tracker
+          reserves funds before upstream calls to prevent concurrent overspend.
+          Dual-mode wallets, real USDC on Base via viem.
+        provenance: {source: [li_2026, site_2026], status: self_reported}
+        variants:
+          - id: torii.pay.full
+            length: long
+            flavor: infra
+            approved: false
+            uses_metrics: [two_deps]
+            keywords: [x402, HTTP 402, USDC, wallets]
+            text: >-
+              Handled the x402 payment flow end to end - intercept the HTTP 402,
+              check the wallet, pay, retry - with a budget tracker that reserves
+              funds before the upstream call so two agents cannot overspend at
+              once; the whole thing ships on two production dependencies
+
+  - id: lead_engine
+    name: "Lead Engine"
+    url: "asmit.space/lead-engine"
+    href: "https://www.asmit.space/lead-engine"
+    dates: "2026"
+    tags: [agents, python, fastapi, react, ml]
+    stack: "Python, FastAPI, React, SQLAlchemy"
+    metrics:
+      - {id: leads, value: "2,129 leads",
+         provenance: {source: site_2026, status: self_reported,
+           note: "Countable and published on his own site. Credible. Keep."}}
+      - id: conversion
+        value: "~50% AI-call conversion"
+        provenance:
+          source: resume_2026
+          status: needs_confirmation
+          note: >-
+            HARD CONFLICT. The resume says "~50% AI-call conversion"; his own
+            site says "50% Success Rate". Those are different claims - a call
+            that connects is not a conversion. 50% conversion on cold real
+            estate calls is implausible and an interviewer will drill it. This
+            number poisons every other number on the page until he defines the
+            denominator.
+      - id: prospect_cut
+        value: "70%"
+        provenance:
+          source: resume_2026
+          status: needs_confirmation
+          note: "Cut against what baseline? No baseline is recorded anywhere."
+    facts:
+      - id: le.dashboard
+        canonical: >-
+          React dashboard with a live pipeline graph: every scout, lead
+          decision and pipeline step visible, and a failed scout surfaces the
+          moment it fails.
+        provenance: {source: site_2026, status: self_reported}
+        note: >-
+          Split out of le.pipeline's canonical, where the dashboard was one
+          clause at the end and never reached a bullet. It matters more than it
+          looks: postings that ask for monitoring, visualisation or fault rates
+          (Waymo V&V) are asking for exactly this, and until now the page said
+          nothing about it. "Failed scouts surface immediately" is from his own
+          site, which describes them turning red in the node view.
+        variants:
+          - id: le.dashboard.obs
+            length: medium
+            flavor: infra
+            approved: false
+            uses_metrics: []
+            keywords: [dashboard, React, monitoring, pipeline graph, failures]
+            text: >-
+              Built the dashboard over it as a live pipeline graph, so every
+              scout, score and call is visible while it runs and a failed
+              scout shows up the moment it fails
+          - id: le.dashboard.short
+            length: short
+            flavor: frontend
+            approved: false
+            uses_metrics: []
+            keywords: [dashboard, React, Recharts]
+            text: >-
+              Built a React dashboard over it with a live pipeline graph
+
+      - id: le.pipeline
+        canonical: >-
+          Autonomous pipeline: scouts public listing and county-record sources,
+          deduplicates by address fingerprint, scores each lead on
+          Motivation x Ability x Timeline (0-100) with written reasoning, then
+          AI voice agents call and qualify. Campaign type auto-assigned by score
+          tier. React dashboard with a live pipeline graph.
+        provenance: {source: [li_2026, site_2026], status: self_reported}
+        note: >-
+          NAME THE SOURCES. Asmit's instruction, 2026-09-05: the scouts and what
+          they scout are the point of the project, and a bullet that says
+          "public listing and county-record sources" describes nothing a reader
+          can picture. All five - Zillow, Redfin, FSBO, expired listings, the
+          Maricopa County Assessor - are already published on his own site and
+          on LinkedIn, so a resume naming them adds no exposure he has not
+          already accepted. This REVERSES the earlier caution, which is kept
+          here so nobody reinstates it by accident: the worry was that naming
+          scraped sites invites a terms-of-service question. It is a fair
+          question and he may still get it; his answer is that these are public
+          listings and public county records. "Constant" is his word for how the
+          scouts run - the site records OpenClaw cron jobs driving them, so it
+          is mechanism, not embellishment.
+        variants:
+          - id: le.pipeline.ml
+            length: long
+            flavor: ml
+            approved: false
+            uses_metrics: [leads]
+            keywords: [autonomous agent, scoring, pipeline, FastAPI]
+            text: >-
+              Sourced 2,129 real estate leads with an agent that pulls public
+              listing and county records, deduplicates by address, and scores
+              each one on motivation, ability and timeline with the reasoning
+              written out
+          - id: le.pipeline.sources
+            length: long
+            flavor: general
+            approved: false
+            uses_metrics: [leads]
+            keywords: [autonomous agents, scouting, deduplication, scoring, cron]
+            note: >-
+              The preferred phrasing from 2026-09-05 on. Five named sources, the
+              constant scouting, and the number - it is the only version that
+              tells a reader what the system actually watches.
+            text: >-
+              Kept five scout agents running constantly across Zillow, Redfin,
+              FSBO, expired listings and the Maricopa County Assessor,
+              deduplicating by address and scoring every lead on motivation,
+              ability and timeline with the reasoning written out - 2,129 leads
+              sourced
+          - id: le.pipeline.sources_short
+            length: medium
+            flavor: general
+            approved: false
+            uses_metrics: [leads]
+            keywords: [autonomous agents, scouting, county records]
+            text: >-
+              Kept five scout agents running constantly across Zillow, Redfin,
+              FSBO, expired listings and county assessor records - 2,129 leads
+              sourced, deduplicated and scored
+          - id: le.pipeline.short
+            length: short
+            flavor: general
+            approved: false
+            uses_metrics: [leads]
+            text: >-
+              Built an autonomous lead pipeline that scouts, deduplicates, scores
+              and calls - 2,129 leads sourced
+
+  - id: pash
+    name: "Pash"
+    url: "lnkd.in/p/dCwX6kYm"
+    href: "https://lnkd.in/p/dCwX6kYm"
+    # Asmit's link, given 2026-09-05 (source user_2026-09-05). Note for whoever
+    # reads this next: a shortener is opaque - a reader cannot tell where it
+    # goes before clicking, and it dies if the shortener does. asmit.space/pash
+    # is the durable address if he ever wants it back.
+    dates: "2026"
+    tags: [audio, ml, aws, gpu]
+    stack: "AWS S3/SQS, Demucs v4, CUDA"
+    metrics:
+      - {id: gpu_speed, value: "5-10x",
+         provenance: {source: li_2026, status: self_reported,
+           note: "An honest benchmark spread, not a round number. Keep."}}
+    facts:
+      - id: pash.arch
+        canonical: >-
+          Audio stem isolation on Demucs v4; S3 storage, SQS async job queue,
+          remote CUDA GPU workers.
+        provenance: {source: [li_2026, site_2026], status: self_reported}
+        variants:
+          - id: pash.arch.full
+            length: long
+            flavor: backend
+            approved: false
+            uses_metrics: [gpu_speed]
+            keywords: [AWS, S3, SQS, CUDA, Demucs]
+            text: >-
+              Split songs into vocals, drums, bass and instrumentals with Demucs
+              v4 - uploads land in S3, jobs queue through SQS, and separation
+              runs on a remote CUDA worker, 5-10x faster than on CPU
+
+  - id: portfolio
+    name: "Portfolio"
+    url: "asmit.space"
+    href: "https://www.asmit.space"
+    dates: null                 # [CONFLICT] resume says 2024, LinkedIn says Feb 2025
+    tags: [3d, frontend, three-js, blender]
+    stack: "Three.js, Blender, React"
+    facts:
+      - id: pf.room
+        canonical: >-
+          Room and desktop modeled in Blender, rendered in the browser with
+          Three.js as a walkable computer where each project opens as an artifact.
+        provenance: {source: resume_2026, status: self_reported}
+        variants:
+          - id: pf.room.short
+            length: short
+            flavor: frontend
+            approved: false
+            uses_metrics: []
+            keywords: [Three.js, Blender, WebGL]
+            text: >-
+              Modeled my own room in Blender and put it in the browser with
+              Three.js - you walk up to the desk, click the machine, and every
+              project opens as its own artifact instead of a list of links
+
+  # Stubs. Descriptions were truncated in the LinkedIn export and no variant may
+  # be written from a half-sentence.
+  - {id: neuropilot, name: "NeuroPilot", dates: "2025",
+     stack: "Electron.js, React", status: needs_confirmation, facts: []}
+  - {id: sentinalai, name: "SentinalAI", dates: "2025",
+     stack: "Python, YOLOv8", status: needs_confirmation,
+     note: "Confirm the spelling before this ever prints - likely 'Sentinel'.",
+     facts: []}
+  - {id: lynti, name: "Lynti", dates: "2024",
+     stack: "React Native, Node.js", status: needs_confirmation, facts: []}
+
+volunteering:
+  - id: covrelief
+    org: "CovreliefDwarka"
+    role: "Founder"
+    dates: "May 2020 – Sep 2020"
+    facts:
+      - id: cov.vax
+        canonical: "[TRUNCATED] 'vaccinated over 100 economically disadvantaged workers...'"
+        provenance:
+          source: li_2026
+          status: needs_confirmation
+          note: >-
+            HARD BLOCK. May-Sep 2020 predates any COVID vaccine (first
+            authorizations were December 2020), so as written the claim is
+            temporally impossible. Either the dates are wrong, or it was a
+            different vaccine, or it was registration/logistics help rather than
+            vaccination. Founding something at seventeen that reached a hundred
+            people is his strongest humanizing detail - which is exactly why it
+            must be right before it appears anywhere.
+        variants: []
+
+skills:
+  # Every skill carries its evidence. Three states:
+  #
+  #   evidence: [...]   demonstrated in an entry above, or listed by Asmit on
+  #                     his own resume, which is his own claim to stand behind
+  #   ask: true         plausible and requested for keyword coverage, but with
+  #                     nothing behind it yet. These RENDER, and every build
+  #                     prints them so they are never forgotten. Confirm or cut.
+  #   flag: unevidenced never rendered until someone vouches for it
+  #
+  # The line that matters: a keyword you cannot be interviewed on is worse than
+  # a missing keyword. "Tell me how you handled state in LangGraph" ends badly
+  # if the honest answer is that you have not used it.
+
+  # --- Languages ---------------------------------------------------------
+  - {name: TypeScript,   evidence: [torii, watchdna, lead_engine]}
+  - {name: JavaScript,   evidence: [watchdna, flickmatch]}
+  - {name: Python,       evidence: [lead_engine, wd.locator, myyogateacher, delhi]}
+  - {name: SQL,          evidence: [myt.voicesql, torii, lead_engine]}
+  - {name: "HTML/CSS",   evidence: [portfolio, flickmatch]}
+  - {name: Go,           evidence: [resume_2026, coursework_2026-09-07]}
+  # coursework_2026-09-07: his standing instruction that a keyword a posting
+  # names may go on the page because he covered it in a class. Weaker than a
+  # project, stronger than nothing; the interview answer is the course.
+  - {name: Java,         evidence: [resume_2026, coursework_2026-09-07]}
+  - {name: Ruby,         evidence: [coursework_2026-09-07]}
+  - {name: "C++",        evidence: [resume_2026], ask: true}
+  - {name: Rust,         evidence: [resume_2026], ask: true}
+
+  # --- AI & agents -------------------------------------------------------
+  - {name: MCP,                   evidence: [torii]}
+  - {name: x402,                  evidence: [torii]}
+  - {name: "OpenAI API",          evidence: [myt.voicesql, lead_engine]}
+  - {name: Whisper,               evidence: [myt.voicesql]}
+  - {name: "Claude API",          evidence: [resume_2026]}
+  - {name: LangChain,             evidence: [resume_2026]}
+  - {name: Pinecone,              evidence: [resume_2026]}
+  - {name: "Prompt engineering",  evidence: [lead_engine, myt.voicesql]}
+  - {name: "Tool use",            evidence: [torii], aliases: ["function calling"]}
+  - {name: "Autonomous agents",   evidence: [lead_engine, torii]}
+  - {name: "LLM streaming",       evidence: [myt.voicesql]}
+  - {name: spaCy,                 evidence: [myyogateacher]}
+  - {name: YOLOv8,                evidence: [sentinalai]}
+  - {name: Demucs,                evidence: [pash]}
+  - {name: "Gaussian Processes",  evidence: [delhi]}
+  - {name: LangGraph,             ask: true}
+  - {name: RAG,                   ask: true}
+  - {name: "Vector search",       ask: true}
+  - {name: Embeddings,            ask: true}
+  - {name: "scikit-learn",        ask: true}
+  - {name: PyTorch,               ask: true}
+
+  # --- Backend & APIs ----------------------------------------------------
+  - {name: "Node.js",     evidence: [watchdna]}
+  - {name: "Express.js",  evidence: [resume_2026], aliases: [Express]}
+  - {name: FastAPI,       evidence: [lead_engine]}
+  - {name: Flask,         evidence: [resume_2026]}
+  - {name: Bun,           evidence: [torii]}
+  - {name: Hono,          evidence: [torii]}
+  - {name: REST,          evidence: [watchdna, lead_engine]}
+  - {name: GraphQL,       evidence: [resume_2026]}
+  - {name: WebSocket,     evidence: [resume_2026]}
+  - {name: JWT,           evidence: [torii, wd.infra]}
+  - {name: "Role-based access control", evidence: [wd.infra], aliases: [RBAC]}
+  - {name: SQLAlchemy,    evidence: [lead_engine]}
+  - {name: Uvicorn,       evidence: [lead_engine]}
+  - {name: Selenium,      evidence: [resume_2026]}
+
+  # --- Frontend & mobile -------------------------------------------------
+  - {name: React,          evidence: [lead_engine, portfolio, flickmatch]}
+  - {name: "React Native", evidence: [myt.biometrics, wd.companion, pash]}
+  - {name: Expo,           evidence: [wd.companion]}
+  - {name: Tailwind,       evidence: [lead_engine, pash]}
+  - {name: NativeWind,     evidence: [resume_2026]}
+  - {name: "Material-UI",  evidence: [flickmatch]}
+  - {name: "Three.js",     evidence: [portfolio]}
+  - {name: Blender,        evidence: [portfolio]}
+  - {name: Vite,           evidence: [lead_engine]}
+  - {name: Recharts,       evidence: [lead_engine]}
+  - {name: Electron,       evidence: [neuropilot]}
+  - {name: Figma,          evidence: [flickmatch]}
+  - {name: Accessibility,  evidence: [coursework_2026-09-07]}
+  - {name: Wireframing,    evidence: [myt.design]}
+  - {name: "User journeys",evidence: [myt.design]}
+  - {name: Mapbox,         evidence: [wd.locator]}
+  - {name: "iOS App Store",evidence: [wd.companion]}
+
+  # --- Data & cloud ------------------------------------------------------
+  - {name: PostgreSQL,  evidence: [wd.infra]}
+  - {name: Supabase,    evidence: [wd.companion]}
+  - {name: MongoDB,     evidence: [resume_2026]}
+  - {name: SQLite,      evidence: [torii, lead_engine]}
+  - {name: Firebase,    evidence: [resume_2026]}
+  - {name: AWS,         evidence: [pash], aliases: [S3, SQS, EC2, Lambda]}
+  - {name: CUDA,        evidence: [pash]}
+  - {name: Docker,      evidence: [resume_2026]}
+  - {name: "CI/CD",     evidence: [resume_2026]}
+  - {name: "GitHub Actions", evidence: [coursework_2026-09-07]}
+  # His instruction, 2026-09-07: surface automation, DevOps and testing on
+  # the resumes. Automation has project evidence (the endpoint-discovery
+  # pipeline; five scouts running unattended). DevOps and Software testing
+  # are coursework keywords under the standing rule; the interview answer is
+  # the course. Pytest and Jest stay ask: true - naming a framework is a
+  # stronger claim than naming the discipline.
+  - {name: Automation,  evidence: [wd.locator, lead_engine]}
+  - {name: GitHub,      evidence: [portfolio]}
+  - {name: Jira,        evidence: [coursework_2026-09-07]}
+  - {name: Agile,       evidence: [coursework_2026-09-07]}
+  - {name: DevOps,      evidence: [coursework_2026-09-07]}
+  - {name: "Software testing", evidence: [coursework_2026-09-07]}
+  - {name: Git,         evidence: [resume_2026]}
+  - {name: Linux,            ask: true}
+  - {name: Pytest,           ask: true}
+  - {name: Jest,             ask: true}
+
+# Phrases the system may select but must never reword. These are the details
+# that only he could have written, and they are the reason a reader believes a
+# person wrote this page.
+protected_strings:
+  - "in a day"
+  - "two production dependencies"
+  - "Ctrl+F-and-edit workflow"
+  - "time-series deduplication"
+  - "walkable computer"
+  - "The human controls policy. The agent controls execution."
+  - "Motivation x Ability x Timeline"
+  - "App Review Guideline 2.1"
+
+never_include:
+  - {item: "Delhi Public School, R.K. Puram, 93%",
+     reason: "High school does not belong on a US graduate resume."}
+  - {item: "Tempe, AZ as current location", reason: "Stale. He is in New York."}
+  - item: "hidden text, white font, injected prompts"
+    reason: "Visible in the parsed layer, and treated as fraud when found."
+  - {item: "certifications section", reason: "No target role requires one."}
+  - item: "professional summary"
+    reason: >-
+      The current one is the most AI-flavored text on the page and repeats what
+      the bullets already say. One tailored line is allowed only for HR-screened
+      campus roles.
+  - {item: "pronouns, photo, street address", reason: "US resume convention."}
+  - {item: "references available upon request", reason: "Wastes a line. Assumed."}

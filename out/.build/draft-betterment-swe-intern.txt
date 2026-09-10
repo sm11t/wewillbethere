@@ -1,0 +1,13 @@
+Software Engineering Intern, New York
+
+Betterment
+
+First, I would like to talk about how I approach problems, how I get better at them, and how I work in a team. I accept it when I fall short of understanding something, and I give my best to understand it from people better than me. I have a lot of respect for anyone I can learn from, and I am not ashamed to ask the same question twice if that is what it takes. It works the other way too. When someone is stuck on something I have already worked out, I will sit with them rather than hand over the answer, and I come out of those understanding it better than when I went in. Knowledge seems to be one of the few things that grows when you share it. I think about problems in systems, and I approach them that way. I also ask the questions that are uncomfortable - I have seen them frustrate people, but they are usually the ones that need asking. I know I have a lot left to learn.
+
+I would encourage you to visit my portfolio at www.asmit.space.
+
+I am a first-year M.S. Computer Science student at NYU, after a B.S. at Arizona State and three engineering internships. Across the three, what I was handed became mine to finish, from the first drawing to the alert that fires when it breaks. WatchDNA was nine months. I set up the backend from scratch on Node.js - the schema, the REST endpoints, JWT authentication with role-based access, the security middleware. Over it I built the store locator: an interactive Mapbox map with real-time filtering, an admin console for data operations, and a Python pipeline that discovers retailer endpoints on its own. When the companion app came, I built it in React Native on Expo and Supabase, reused the same auth and data layers, and took it through iOS App Store review myself, including the correspondence with the reviewer. I hooked up alerts for anything that failed, so a broken endpoint was seen and fixed right away.
+
+At MyYogaTeacher I was given the initial design of a new feature. I turned the idea into diagrams, wireframes and user journeys, handed them to the development team I was part of, and then built against my own drawings. I also wrote the React Native client that streams biometric data in real time, with offline-first sync and time-series deduplication so nothing is lost when the network drops. The voice-to-SQL pipeline I shipped on Whisper, with streaming responses, replaced the admin team's Ctrl+F-and-edit workflow. Before that, at Flickmatch, I revamped the website end to end, turning new Figma designs into responsive React and Material-UI components across every page. I wrote the state management as modular pieces, so the same logic carried across the site as it grew.
+
+I am in New York and available from June 2027.

@@ -1,0 +1,13 @@
+Software Engineering Intern, Summer 2027
+
+Scale AI, San Francisco
+
+First, I would like to talk about how I approach problems, how I get better at them, and how I work in a team. I accept it when I fall short of understanding something, and I give my best to understand it from people better than me. I have a lot of respect for anyone I can learn from, and I am not ashamed to ask the same question twice if that is what it takes. It works the other way too. When someone is stuck on something I have already worked out, I will sit with them rather than hand over the answer, and I come out of those understanding it better than when I went in. Knowledge seems to be one of the few things that grows when you share it. I think about problems in systems, and I approach them that way. I also ask the questions that are uncomfortable - I have seen them frustrate people, but they are usually the ones that need asking. I know I have a lot left to learn.
+
+I would encourage you to visit my portfolio at www.asmit.space.
+
+You list shipping agentic applications and the tooling that makes them observable and safe to deploy. That is the project I would bring. Torii sits between AI agents and the paid tools they call, enforcing identity, policy and budget on every request: JWT identity per agent, a policy engine, and a ledger recording every call and why any one was blocked. The budget tracker reserves funds before the upstream call, so two agents running at once cannot overspend the same balance. I did not build a demo of an agent; I built the thing you would want one running inside.
+
+The rest is product engineering. I am a first-year M.S. Computer Science student at NYU after a B.S. at Arizona State and three internships. At WatchDNA I set up the backend from scratch - databases, JWT authentication with role-based access, the security middleware - and the store locator on top of it, then stayed with it across nine months. At MyYogaTeacher I shipped a voice-to-SQL pipeline that replaced the admin team's Ctrl+F-and-edit workflow; the part that made it work was knowing what that workflow actually was, which took longer than the model did.
+
+I am available in San Francisco from June 2027.

@@ -1,0 +1,9 @@
+Course Assistant - [COURSE CODE], [COURSE TITLE]
+
+[Professor / Department], New York University
+
+First, I would like to talk about how I approach problems, how I get better at them, and how I work in a team. I accept it when I fall short of understanding something, and I give my best to understand it from people better than me. I have a lot of respect for anyone I can learn from, and I am not ashamed to ask the same question twice if that is what it takes. It works the other way too. When someone is stuck on something I have already worked out, I will sit with them rather than hand over the answer, and I come out of those understanding it better than when I went in. Knowledge seems to be one of the few things that grows when you share it. I think about problems in systems, and I approach them that way. I think that is also what makes me useful explaining something to someone else - I still remember what it is like to not understand it yet.
+
+I spent a year as Technical Officer of the AI Society at Arizona State, where I wrote the teaching materials and ran the workshops that introduced machine learning to students with no technical background, and mentored four freshmen through their first ML project. Before that I worked under Prof. R. P. Singh at the University of Delhi on optimising Gaussian Process classifiers. I am now a first-year M.S. Computer Science student here, with three engineering internships behind me.
+
+I can commit [N] hours a week through the semester, and I am available [DAYS]. [WORK AUTHORIZATION LINE - see intake.md]. I would be glad to talk about what the course needs.

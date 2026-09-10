@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>Resume</title>
+<style>
+html, body, .container {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+</style>
+<style>@page {
+  size: letter;
+  margin: 0.45in 0.5in;
+}
+</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+
+body {
+  font-family: Tinos, 'Times New Roman', Times, serif;
+  font-size: 12.6px;
+  font-weight: 400;
+  line-height: 1.16;
+  color: #000;
+  margin: 0;
+
+  /* Ligatures off: stored as single U+FB01/U+FB02 glyphs, "filtering" and
+     "Officer" extract with one character where two belong and stop matching a
+     keyword search. Lining figures so digits sit on the baseline. */
+  font-variant-ligatures: none;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "lnum" 1, "onum" 0;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+}
+
+a { color: #000; text-decoration: none; border-bottom: 0.4px solid #999; }
+h3 a { border-bottom: none; }
+
+/* --- header ------------------------------------------------------------- */
+
+h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 27.9px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  font-size: 11.16px;
+  margin: 2.16px 0 0;
+}
+/* The separator is a real character. The starter template drew it with an
+   ::after pseudo-element, which never reaches the PDF text layer, so the whole
+   contact line extracted as one unsearchable token with the email fused to
+   the phone number. */
+.contact .sep { padding: 0 2.7px; }
+
+/* --- sections ----------------------------------------------------------- */
+
+h2 {
+  text-transform: uppercase;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #000;
+  margin: 7.92px 0 2.16px;
+  padding: 0 0 0.72px;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* --- entries ------------------------------------------------------------ */
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12.6px;
+  font-size: 12.96px;
+  font-weight: 700;
+  margin: 4.32px 0 0;
+  padding: 0;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+h3 .r {
+  font-weight: 400;
+  font-size: 11.7px;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12.6px;
+  font-size: 11.7px;
+  font-style: italic;
+  margin: 0.72px 0 0;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.sub .r {
+  white-space: nowrap;
+  font-style: normal;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* --- bullets ------------------------------------------------------------ */
+
+ul {
+  margin: 2.16px 0 0;
+  padding-left: 12.24px;
+  break-before: avoid;
+  page-break-before: avoid;
+}
+li {
+  margin: 1.08px 0;
+  padding-left: 1.44px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+p { margin: 0; padding: 0; }
+
+/* --- skills ------------------------------------------------------------- */
+
+.skill { margin: 2.25px 0 0; font-size: 12.06px; break-inside: avoid; }
+.skill b { font-weight: 700; }
+</style>
+</head><body>
+<h1>Asmit Datta</h1>
+<p class="contact"><span>New York, NY</span> <span class="sep">·</span> <span>asmit77@icloud.com</span> <span class="sep">·</span> <span><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space">asmit.space</a></span> <span class="sep">·</span> <span><a target="blank" rel="noopener noreferrer" href="https://linkedin.com/in/asmitrajeet">linkedin.com/in/asmitrajeet</a></span> <span class="sep">·</span> <span><a target="blank" rel="noopener noreferrer" href="https://github.com/sm11t">github.com/sm11t</a></span></p>
+<h2>Education</h2>
+<h3><span class="l">New York University</span><span class="r">New York, NY</span></h3>
+<p class="sub"><span class="l">M.S. in Computer Science</span><span class="r">Expected 2028</span></p>
+<h3><span class="l">Arizona State University</span><span class="r">Tempe, AZ</span></h3>
+<p class="sub"><span class="l">B.S. in Computer Science, Minor in Business</span><span class="r">May 2026</span></p>
+<h2>Experience</h2>
+<h3><span class="l">Software Engineer Intern (Capstone)</span><span class="r">Aug 2025 – Apr 2026</span></h3>
+<p class="sub"><span class="l">WatchDNA</span><span class="r">Ontario, Canada (Remote)</span></p>
+<ul>
+<li>Built WatchDNA's store locator: an interactive Mapbox map with real-time filtering, an admin console for data operations, and an automated Python pipeline that discovers retailer endpoints without anyone pointing it at them</li>
+<li>Set up the backend from scratch on Node.js - the database schema, the REST endpoints, JWT authentication with role-based access, and the security middleware around it</li>
+<li>Shipped a companion app on the same infrastructure, reusing the auth, security, and data layers</li>
+</ul>
+<h3><span class="l">Software Engineer Intern</span><span class="r">May 2025 – Jan 2026</span></h3>
+<p class="sub"><span class="l">MyYogaTeacher</span><span class="r">San Diego, CA (Remote)</span></p>
+<ul>
+<li>Turned a high-level feature idea into diagrams, wireframes and user journeys for the development team, then built against them</li>
+<li>Wrote the React Native client that streams biometric data in real time, with offline-first sync and time-series deduplication so nothing is lost when the network drops</li>
+<li>Shipped a voice-to-SQL pipeline on Whisper with streaming LLM responses that replaced the admin team's Ctrl+F-and-edit workflow</li>
+</ul>
+<h3><span class="l">Technical Officer</span><span class="r">Aug 2025 – Jan 2026</span></h3>
+<p class="sub"><span class="l">The AI Society at ASU</span><span class="r">Tempe, AZ</span></p>
+<ul>
+<li>Mentored four freshmen through their first ML project, an emotion detection system reading facial expressions and audio cues</li>
+<li>Ran workshops and study sessions that made machine learning approachable to students with no technical background, and wrote the materials for them</li>
+</ul>
+<h3><span class="l">Research Study Assistant</span><span class="r">May 2024 – Aug 2024</span></h3>
+<p class="sub"><span class="l">University of Delhi</span><span class="r">New Delhi, India</span></p>
+<ul>
+<li>Worked under Prof. R. P. Singh on optimizing Gaussian Process classifiers for high-dimensional data</li>
+</ul>
+<h2>Projects</h2>
+<h3><span class="l"><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space/kya">Torii</a></span><span class="r">2026</span></h3>
+<p class="sub"><span class="l"><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space/kya">asmit.space/kya</a></span><span class="r">TypeScript, Bun, Hono, SQLite</span></p>
+<ul>
+<li>Put an MCP proxy between AI agents and the paid tools they call, enforcing identity, policy and budget on every request: JWT agent identity, a JSON policy engine, and a SQLite ledger recording every call and every reason one was blocked</li>
+<li>Handled the x402 payment flow end to end - intercept the HTTP 402, check the wallet, pay, retry - with a budget tracker that reserves funds before the upstream call so two agents cannot overspend at once; the whole thing ships on two production dependencies</li>
+</ul>
+<h3><span class="l"><a target="blank" rel="noopener noreferrer" href="https://lnkd.in/p/dCwX6kYm">Pash</a></span><span class="r">2026</span></h3>
+<p class="sub"><span class="l"><a target="blank" rel="noopener noreferrer" href="https://lnkd.in/p/dCwX6kYm">lnkd.in/p/dCwX6kYm</a></span><span class="r">AWS S3/SQS, Demucs v4, CUDA</span></p>
+<ul>
+<li>Split songs into vocals, drums, bass and instrumentals with Demucs v4 - uploads land in S3, jobs queue through SQS, and separation runs on a remote CUDA worker, 5-10x faster than on CPU</li>
+</ul>
+<h3><span class="l"><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space/lead-engine">Lead Engine</a></span><span class="r">2026</span></h3>
+<p class="sub"><span class="l"><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space/lead-engine">asmit.space/lead-engine</a></span><span class="r">Python, FastAPI, React, SQLAlchemy</span></p>
+<ul>
+<li>Kept five scout agents running constantly across Zillow, Redfin, FSBO, expired listings and the Maricopa County Assessor, deduplicating by address and scoring every lead on motivation, ability and timeline with the reasoning written out - 2,129 leads sourced</li>
+<li>Built the dashboard over it as a live pipeline graph, so every scout, score and call is visible while it runs and a failed scout shows up the moment it fails</li>
+</ul>
+<h3><span class="l"><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space">Portfolio</a></span></h3>
+<p class="sub"><span class="l"><a target="blank" rel="noopener noreferrer" href="https://www.asmit.space">asmit.space</a></span><span class="r">Three.js, Blender, React</span></p>
+<ul>
+<li>Modeled my own room in Blender and put it in the browser with Three.js - you walk up to the desk, click the machine, and every project opens as its own artifact instead of a list of links</li>
+</ul>
+<h2>Skills</h2>
+<p class="skill"><b>Languages:</b> <span>Java, JavaScript, Ruby, Python, HTML/CSS, TypeScript, SQL</span></p>
+<p class="skill"><b>Backend &#x26; APIs:</b> <span>Node.js, REST, Express.js, FastAPI, JWT, Flask, Bun, Hono, GraphQL, WebSocket, Role-based access control, SQLAlchemy</span></p>
+<p class="skill"><b>Frontend &#x26; Mobile:</b> <span>React Native, Expo, React, Tailwind, NativeWind, Material-UI, Three.js, Blender, Vite, Recharts, Electron, Figma, Mapbox</span></p>
+<p class="skill"><b>Data &#x26; Cloud:</b> <span>Git, PostgreSQL, SQLite, AWS, Docker, CI/CD, Automation, DevOps, Software testing, Supabase, MongoDB, Firebase, CUDA</span></p>
+<p class="skill"><b>AI &#x26; Agents:</b> <span>MCP, x402, LangChain, OpenAI API, Claude API, Whisper, Pinecone, Autonomous agents, Tool use, Prompt engineering, spaCy</span></p>
+</body></html>

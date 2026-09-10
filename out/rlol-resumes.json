@@ -1,0 +1,194 @@
+{
+  "full": {
+    "id": "a10bdf61-14bc-43db-a3ca-1674603a10f9",
+    "name": "Asmit Datta - full"
+  },
+  "letter:draft-google-swe-intern": {
+    "id": "8e736058-4d35-4d07-9547-65e63cbc2889",
+    "name": "Cover letter - draft-google-swe-intern"
+  },
+  "letter:draft-campus-ca": {
+    "id": "1b61a297-a6aa-45c7-b8de-f1a3623af30f",
+    "name": "Cover letter - draft-campus-ca"
+  },
+  "mckesson-swe-2027": {
+    "id": "7b08a823-2765-48ca-b995-e3e36bb86833",
+    "name": "Asmit Datta - mckesson-swe-2027"
+  },
+  "letter:draft-mckesson-swe-2027": {
+    "id": "5b12a2a0-b203-4175-bb07-9651cde7cc60",
+    "name": "Cover letter - draft-mckesson-swe-2027"
+  },
+  "stoke-boltline-2027": {
+    "id": "c266a62f-e592-4611-bdef-85dc5eb8d20f",
+    "name": "Asmit Datta - stoke-boltline-2027"
+  },
+  "letter:draft-stoke-boltline-2027": {
+    "id": "3f503706-afb6-4a02-9645-e9ec5ebba192",
+    "name": "Cover letter - draft-stoke-boltline-2027"
+  },
+  "bain-genai-2027": {
+    "id": "fa97e412-0d8d-4730-9d14-4bb5e5eb8921",
+    "name": "Asmit Datta - bain-genai-2027"
+  },
+  "letter:draft-bain-genai-2027": {
+    "id": "1e37af61-c397-4bdf-88fb-f2518bb447ec",
+    "name": "Cover letter - draft-bain-genai-2027"
+  },
+  "paypal-swe-2027": {
+    "id": "0d988bfb-56d1-439b-9170-395155269403",
+    "name": "Asmit Datta - paypal-swe-2027"
+  },
+  "letter:draft-paypal-swe-2027": {
+    "id": "c5452f5b-417a-4b25-8b19-e9cc0995033d",
+    "name": "Cover letter - draft-paypal-swe-2027"
+  },
+  "letter:draft-scale-swe-2027": {
+    "id": "3a9610d1-fecc-4b01-9412-27dbc2f67939",
+    "name": "Cover letter - draft-scale-swe-2027"
+  },
+  "scale-swe-2027": {
+    "id": "4e1fc99c-2477-4e1b-a7cd-891398041386",
+    "name": "Asmit Datta - scale-swe-2027"
+  },
+  "primer-fullstack": {
+    "id": "b14d04af-54e3-45aa-a0ad-dc42b847ab55",
+    "name": "Asmit Datta - primer-fullstack"
+  },
+  "swe-intern": {
+    "id": "9e35fdb0-38fd-4d67-82df-5b1a4ae1b269",
+    "name": "Asmit Datta - swe-intern"
+  },
+  "campus-ta": {
+    "id": "ad4060a7-195c-4423-b409-bf04a26d7d5c",
+    "name": "Asmit Datta - campus-ta"
+  },
+  "ml-ai-infra": {
+    "id": "c0b25a32-1cc3-4336-a6f5-1b4f785cb89b",
+    "name": "Asmit Datta - ml-ai-infra"
+  },
+  "ra-research": {
+    "id": "416f0471-c044-405d-9328-5273dfc4348c",
+    "name": "Asmit Datta - ra-research"
+  },
+  "adobe-swe-2027": {
+    "id": "e825f1c7-e584-4fe5-967a-bdad01645117",
+    "name": "Asmit Datta - adobe-swe-2027"
+  },
+  "letter:draft-adobe-swe-2027": {
+    "id": "94341442-e4f9-4555-a9ef-c0caa8e34ef5",
+    "name": "Cover letter - draft-adobe-swe-2027"
+  },
+  "waymo-systems-2027": {
+    "id": "5bb0ef20-85ab-47d2-bcae-0318f7a8f150",
+    "name": "Asmit Datta - waymo-systems-2027"
+  },
+  "letter:draft-waymo-systems-2027": {
+    "id": "6bd818fd-a738-4d45-b300-6e9f74a9a44e",
+    "name": "Cover letter - draft-waymo-systems-2027"
+  },
+  "waymo-vv-masters": {
+    "id": "30861735-64a0-4ac0-8ff4-b5a15bbf3edf",
+    "name": "Asmit Datta - waymo-vv-masters"
+  },
+  "letter:draft-waymo-vv-2027": {
+    "id": "8bf7c861-9e33-4285-a606-02fe8f8b6cfe",
+    "name": "Cover letter - draft-waymo-vv-2027"
+  },
+  "nyu-general-ra-2026": {
+    "id": "690a85c3-9833-4195-a9b4-ce275baae49d",
+    "name": "Asmit Datta - nyu-general-ra-2026"
+  },
+  "nyu-gph-ra-2026": {
+    "id": "1c42fdbd-2510-417a-b22c-be156b09b4b4",
+    "name": "Asmit Datta - nyu-gph-ra-2026"
+  },
+  "nyu-gallatin-gallery-2026": {
+    "id": "7679ef74-907e-4f6f-a298-4999edd363b3",
+    "name": "Asmit Datta - nyu-gallatin-gallery-2026"
+  },
+  "letter:draft-nyu-gph-research-assistant-fall-2026": {
+    "id": "7ea26198-48ed-4e95-b4e7-ed5b9fb24ca5",
+    "name": "Cover letter - draft-nyu-gph-research-assistant-fall-2026"
+  },
+  "nyu-cfa-creative-tech-2026": {
+    "id": "12ccddd1-5874-4e05-aff9-82c8f864b2c8",
+    "name": "Asmit Datta - nyu-cfa-creative-tech-2026"
+  },
+  "letter:draft-nyu-cfa-creative-technologist-fall-2026": {
+    "id": "fd9b1021-a28c-446b-bd82-766c5dade751",
+    "name": "Cover letter - draft-nyu-cfa-creative-technologist-fall-2026"
+  },
+  "nyu-stern-finance-asst-2026": {
+    "id": "eb577853-371c-496c-8a0a-8b93e0942b7b",
+    "name": "Asmit Datta - nyu-stern-finance-asst-2026"
+  },
+  "letter:draft-nyu-stern-finance-dept-assistant-fall-2026": {
+    "id": "e2ac1f9f-670f-496c-8d39-4dc1f166cdaf",
+    "name": "Cover letter - draft-nyu-stern-finance-dept-assistant-fall-2026"
+  },
+  "nyu-bme-ca-2026": {
+    "id": "a20a009f-3bd1-4639-9627-b7b62ae0d3ea",
+    "name": "Asmit Datta - nyu-bme-ca-2026"
+  },
+  "letter:draft-nyu-bme-course-assistant-fall-2026": {
+    "id": "c88e7310-1b3c-4207-a6c6-a9d5b5d314a7",
+    "name": "Cover letter - draft-nyu-bme-course-assistant-fall-2026"
+  },
+  "letter:draft-nyu-gallatin-gallery-admin-fall-2026": {
+    "id": "5bb7e5d7-7987-4e33-9d4f-2e656af70c0e",
+    "name": "Cover letter - draft-nyu-gallatin-gallery-admin-fall-2026"
+  },
+  "letter:draft-nyu-general-research-assistant-fall-2026": {
+    "id": "6ac01416-38b7-4d94-ad75-3979f8c2daba",
+    "name": "Cover letter - draft-nyu-general-research-assistant-fall-2026"
+  },
+  "betterment-swe-intern": {
+    "id": "109c30ae-b956-4f26-8dcb-f8c6e5b94b12",
+    "name": "Asmit Datta - betterment-swe-intern"
+  },
+  "letter:draft-betterment-swe-intern": {
+    "id": "11a81593-d402-446a-b883-9601cd25a141",
+    "name": "Cover letter - draft-betterment-swe-intern"
+  },
+  "dropbox-swe-intern-2027": {
+    "id": "6ecbc11a-d378-4339-8e05-602cb7133e46",
+    "name": "Asmit Datta - dropbox-swe-intern-2027"
+  },
+  "letter:draft-dropbox-swe-intern-2027": {
+    "id": "3421f354-d0b6-4c50-962c-4648fe2210a0",
+    "name": "Cover letter - draft-dropbox-swe-intern-2027"
+  },
+  "icf-swe-intern-2027": {
+    "id": "0bffdec8-436c-4600-b3b2-a24df9d589bd",
+    "name": "Asmit Datta - icf-swe-intern-2027"
+  },
+  "letter:draft-icf-swe-intern-2027": {
+    "id": "47f93efa-3edc-485c-962d-788d6705c977",
+    "name": "Cover letter - draft-icf-swe-intern-2027"
+  },
+  "microsoft-swe-intern-2027": {
+    "id": "403f7c41-d4d8-4142-87c7-a5ef929005df",
+    "name": "Asmit Datta - microsoft-swe-intern-2027"
+  },
+  "letter:draft-microsoft-swe-intern-2027": {
+    "id": "4d0de480-80ae-4a08-a38c-9c454e525b68",
+    "name": "Cover letter - draft-microsoft-swe-intern-2027"
+  },
+  "tjx-it-engineer-intern-2027": {
+    "id": "accea364-5c4f-44b7-9a52-155a0cb175ec",
+    "name": "Asmit Datta - tjx-it-engineer-intern-2027"
+  },
+  "letter:draft-tjx-it-engineer-intern-2027": {
+    "id": "6f6d6947-b287-4774-bd8d-efddbbbc04e6",
+    "name": "Cover letter - draft-tjx-it-engineer-intern-2027"
+  },
+  "rilla-swe-2027": {
+    "id": "e1bd3236-84b6-465f-8d37-b8c3c95b23eb",
+    "name": "Asmit Datta - rilla-swe-2027"
+  },
+  "pm-intern-2027": {
+    "id": "b2bcc6d5-b3c7-4cda-9e24-b4b5c081ba72",
+    "name": "Asmit Datta - pm-intern-2027"
+  }
+}

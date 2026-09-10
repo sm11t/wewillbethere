@@ -1,0 +1,13 @@
+Software Development Intern, Summer 2027 (JR0152635)
+
+McKesson High Volume Solutions, Irving, Texas
+
+First, I would like to talk about how I approach problems, how I get better at them, and how I work in a team. I accept it when I fall short of understanding something, and I give my best to understand it from people better than me. I have a lot of respect for anyone I can learn from, and I am not ashamed to ask the same question twice if that is what it takes. It works the other way too. When someone is stuck on something I have already worked out, I will sit with them rather than hand over the answer, and I come out of those understanding it better than when I went in. Knowledge seems to be one of the few things that grows when you share it. I think about problems in systems, and I approach them that way. I also ask the questions that are uncomfortable - I have seen them frustrate people, but they are usually the ones that need asking. I know I have a lot left to learn.
+
+I would encourage you to visit my portfolio at www.asmit.space.
+
+I am a first-year M.S. Computer Science student at NYU, graduating in 2028, after a B.S. at Arizona State and three engineering internships. Python is the language I reach for first: I built the endpoint-discovery pipeline behind WatchDNA's store locator with it, and the backend of a lead pipeline on FastAPI that scouts public records, deduplicates by address, and scores what it finds. At WatchDNA I also built the backend from scratch - databases, JWT authentication with role-based access, and the security middleware around it - then maintained and extended it across nine months, which is where I learned that most of the work in software arrives after the first version ships.
+
+The part of this posting I care most about is the part about learning from peers. I spent a year as Technical Officer of the AI Society at Arizona State, writing the teaching materials and running the workshops that introduced machine learning to students with no technical background, and mentoring four freshmen through their first ML project. Explaining something to someone who does not have it yet is the fastest way I know to find out how well I understand it, and it is most of why I want to spend a summer with engineers further along than me.
+
+I am available for the full ten weeks in Irving from June 2027.

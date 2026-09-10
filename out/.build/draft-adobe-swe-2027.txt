@@ -1,0 +1,13 @@
+Software Engineer Intern, 2027
+
+Adobe
+
+First, I would like to talk about how I approach problems, how I get better at them, and how I work in a team. I accept it when I fall short of understanding something, and I give my best to understand it from people better than me. I have a lot of respect for anyone I can learn from, and I am not ashamed to ask the same question twice if that is what it takes. It works the other way too. When someone is stuck on something I have already worked out, I will sit with them rather than hand over the answer, and I come out of those understanding it better than when I went in. Knowledge seems to be one of the few things that grows when you share it. I think about problems in systems, and I approach them that way. I also ask the questions that are uncomfortable - I have seen them frustrate people, but they are usually the ones that need asking. I know I have a lot left to learn.
+
+I would encourage you to visit my portfolio at www.asmit.space.
+
+You ask for an understanding of how to use AI tools responsibly. I spent long enough on that question to build something. Torii sits between AI agents and the paid tools they call and decides, per request, what an agent is allowed to do: identity for each agent, a policy engine, a budget reserved before the call rather than reconciled after it, and a ledger recording every call and why any one was blocked. The rule it is built around is a short one. The human controls policy. The agent controls execution.
+
+The lifecycle you describe is most of what I did at WatchDNA. I am a first-year M.S. Computer Science student at NYU after a B.S. at Arizona State and three internships, and that one ran nine months: I set up the backend from scratch - databases, JWT authentication with role-based access, the security middleware - built the store locator on top of it, and shipped a companion app that reused the same auth and data layers. Most of what I know about writing maintainable code I learned across those nine months rather than in the first few weeks of them.
+
+I am in New York and available from June through September 2027.
